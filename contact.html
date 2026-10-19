@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Alpine Ascents — Reach the Summit, Connect With Us</title>
+  <meta name="description" content="Contact Alpine Ascents for expedition enquiries, training programs and safety information.">
+
+  <!-- Google Fonts: Sora (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Page styles -->
+   <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body id="home">
+
+
+  <!-- ============ SKIP LINK (ACCESSIBILITY) ============ -->
+  <a class="skip-link" href="#contactForm">Skip to contact form</a>
+
+  <!-- NAVBAR -->
+    <div class="floating-nav-container">
+        <nav class="navbar navbar-expand-lg master-pill-navbar">
+            <div class="container-fluid px-2 px-lg-4">
+                <a class="navbar-brand d-flex align-items-center gap-2 m-0 text-decoration-none flex-shrink-0"
+                    href="index.html">
+                    <img src="./img/Gemini_Generated_Image_rip6w4rip6w4rip6.png" alt="Logo" class="brand-local-img">
+                    <span class="text-white fw-bold">Alpine<span class="brand-highlight">Aura</span></span>
+                </a>
+                <button class="navbar-toggler border-0 shadow-none text-white d-lg-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#floatingNavContent" aria-controls="floatingNavContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered fs-4"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center flex-grow-1 mx-lg-4"
+                    id="floatingNavContent">
+                    <ul class="navbar-nav inner-links-pill align-items-lg-center my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="techniques.html">Techniques</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shelters.html">Shelters</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hazards.html">Hazards</a></li>
+                        <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="d-none d-lg-flex flex-shrink-0">
+                    <a href="contact.html" class="btn btn-gradient-action ">
+                        <span>Book Journey</span>
+                        <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+  <!-- ============ HERO SECTION ============ -->
+  <header class="aa-hero d-flex align-items-center" id="contact-hero">
+    <div class="aa-hero-overlay" aria-hidden="true"></div>
+    <div class="aa-hero-mist" aria-hidden="true"></div>
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+    <div class="container position-relative aa-hero-content text-center">
+      <p class="aa-eyebrow fade-in-up">GET IN TOUCH</p>
+      <h1 class="aa-hero-title fade-in-up delay-1">Reach the Summit. <span class="aa-text-accent">Connect</span> With Us.</h1>
+      <p class="aa-hero-sub fade-in-up delay-2">
+        Have questions about mountaineering, expeditions, training, safety or climbing programs?
+        Our team is here to guide you.
+      </p>
+      <div class="aa-hero-actions fade-in-up delay-3">
+        <a href="#contactForm" class="btn aa-btn-primary btn-lg" id="sendEnquiryBtn">
+          <i class="fa-solid fa-paper-plane me-2" aria-hidden="true"></i>Send an Enquiry
+        </a>
+        <a href="#findUs" class="btn aa-btn-outline btn-lg" id="findLocationBtn">
+          <i class="fa-solid fa-location-dot me-2" aria-hidden="true"></i>Find Our Location
+        </a>
+      </div>
+    </div>
+
+    <div class="aa-scroll-cue" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></div>
+  </header>
+
+  <main id="home">
+
+    <!-- ============ CONTACT INFO CARDS ============ -->
+    <section class="aa-section" id="about" aria-label="Contact information">
+      <div class="container">
+        <div class="row g-4">
+
+          <div class="col-12 col-sm-6 col-lg-3 aa-reveal">
+            <div class="aa-card text-center h-100">
+              <div class="aa-card-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+              <h3 class="aa-card-title">Our Location</h3>
+              <p class="aa-card-text">Alpine Ascents Mountaineering Center</p>
+              <p class="aa-card-text aa-muted">Mountain Adventure Center,<br>Seattle, Washington, USA</p>
+              <p class="aa-card-note">(Sample address for demonstration)</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3 aa-reveal">
+            <div class="aa-card text-center h-100">
+              <div class="aa-card-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+              <h3 class="aa-card-title">Call Us</h3>
+              <p class="aa-card-text"><a href="tel:+15550123456" class="aa-card-link">+1 (555) 012-3456</a></p>
+              <p class="aa-card-text aa-muted">Mon – Sat, 9 AM – 6 PM</p>
+              <p class="aa-card-note">(Demo number — not a working line)</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3 aa-reveal">
+            <div class="aa-card text-center h-100">
+              <div class="aa-card-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+              <h3 class="aa-card-title">Email Us</h3>
+              <p class="aa-card-text"><a href="mailto:info@alpineascents.example" class="aa-card-link">info@alpineascents.example</a></p>
+              <p class="aa-card-text aa-muted">We reply within 2 business days</p>
+              <p class="aa-card-note">(Demo email for this eProject)</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3 aa-reveal">
+            <div class="aa-card text-center h-100">
+              <div class="aa-card-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
+              <h3 class="aa-card-title">Support Hours</h3>
+              <p class="aa-card-text">Monday – Saturday</p>
+              <p class="aa-card-text aa-muted">9:00 AM – 6:00 PM</p>
+              <p class="aa-card-note">Emergencies: contact local emergency/rescue services.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT FORM ============ -->
+    <section class="aa-section aa-section-alt" id="contactForm" aria-label="Enquiry form">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+
+            <div class="text-center mb-5 aa-reveal">
+              <p class="aa-eyebrow">ENQUIRY FORM</p>
+              <h2 class="aa-section-title">Send Us a Message</h2>
+              <p class="aa-section-sub">Tell us about your climb, and our team will guide the way.</p>
+            </div>
+
+            <!-- Alerts -->
+            <div id="formSuccessAlert" class="alert aa-alert-success d-none" role="alert" aria-live="polite">
+              <i class="fa-solid fa-circle-check me-2" aria-hidden="true"></i>
+              <span>Thank you! Your enquiry has been received successfully.</span>
+            </div>
+            <div id="formErrorAlert" class="alert aa-alert-error d-none" role="alert" aria-live="assertive">
+              <i class="fa-solid fa-triangle-exclamation me-2" aria-hidden="true"></i>
+              <span>Please correct the highlighted fields before submitting.</span>
+            </div>
+
+            <form id="enquiryForm" class="aa-form aa-reveal" novalidate>
+
+              <div class="row g-4">
+
+                <div class="col-md-6 aa-field">
+                  <label for="fullName" class="aa-label">Full Name</label>
+                  <input type="text" class="form-control aa-input" id="fullName" name="fullName"
+                    placeholder="e.g. Alex Morgan" required minlength="2" aria-required="true">
+                  <div class="invalid-feedback">Please enter your full name (min. 2 characters).</div>
+                </div>
+
+                <div class="col-md-6 aa-field">
+                  <label for="email" class="aa-label">Email Address</label>
+                  <input type="email" class="form-control aa-input" id="email" name="email"
+                    placeholder="e.g. alex@example.com" required aria-required="true">
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+
+                <div class="col-md-6 aa-field">
+                  <label for="phone" class="aa-label">Phone Number</label>
+                  <input type="tel" class="form-control aa-input" id="phone" name="phone"
+                    placeholder="e.g. +1 555 012 3456" required aria-required="true">
+                  <div class="invalid-feedback">Please enter a valid phone number (7–15 digits).</div>
+                </div>
+
+                <div class="col-md-6 aa-field">
+                  <label for="country" class="aa-label">Country</label>
+                  <input type="text" class="form-control aa-input" id="country" name="country"
+                    placeholder="e.g. United States" required aria-required="true">
+                  <div class="invalid-feedback">Please enter your country.</div>
+                </div>
+
+                <div class="col-md-6 aa-field">
+                  <label for="subject" class="aa-label">Subject</label>
+                  <input type="text" class="form-control aa-input" id="subject" name="subject"
+                    placeholder="e.g. Expedition availability" required aria-required="true">
+                  <div class="invalid-feedback">Please enter a subject.</div>
+                </div>
+
+                <div class="col-md-6 aa-field">
+                  <label for="enquiryType" class="aa-label">Type of Enquiry</label>
+                  <select class="form-select aa-input" id="enquiryType" name="enquiryType" required aria-required="true">
+                    <option value="" selected disabled>Choose an option</option>
+                    <option value="General Information">General Information</option>
+                    <option value="Mountaineering Expedition">Mountaineering Expedition</option>
+                    <option value="Training Program">Training Program</option>
+                    <option value="Safety Information">Safety Information</option>
+                    <option value="Group/Club Information">Group/Club Information</option>
+                    <option value="Partnership">Partnership</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div class="invalid-feedback">Please select an enquiry type.</div>
+                </div>
+
+                <div class="col-md-6 aa-field">
+                  <label for="experienceLevel" class="aa-label">Experience Level</label>
+                  <select class="form-select aa-input" id="experienceLevel" name="experienceLevel" required aria-required="true">
+                    <option value="" selected disabled>Choose an option</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                    <option value="Professional">Professional</option>
+                  </select>
+                  <div class="invalid-feedback">Please select your experience level.</div>
+                </div>
+
+                <div class="col-md-6 aa-field">
+                  <fieldset>
+                    <legend class="aa-label">Preferred Contact Method</legend>
+                    <div class="aa-radio-group">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="preferredContact" id="contactEmail" value="Email" checked>
+                        <label class="form-check-label" for="contactEmail">Email</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="preferredContact" id="contactPhone" value="Phone">
+                        <label class="form-check-label" for="contactPhone">Phone</label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="col-12 aa-field">
+                  <label for="message" class="aa-label">Message</label>
+                  <textarea class="form-control aa-input" id="message" name="message" rows="5"
+                    placeholder="Tell us more about your enquiry (minimum 20 characters)..." required
+                    minlength="20" aria-required="true"></textarea>
+                  <div class="d-flex justify-content-between">
+                    <div class="invalid-feedback">Message must be at least 20 characters long.</div>
+                    <small class="aa-char-count" id="charCount">0 / 20 min characters</small>
+                  </div>
+                </div>
+
+                <div class="col-12 aa-field">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="consentCheck" name="consentCheck" required aria-required="true">
+                    <label class="form-check-label aa-checkbox-label" for="consentCheck">
+                      I agree that my information may be used to respond to my enquiry.
+                    </label>
+                    <div class="invalid-feedback">You must agree before submitting.</div>
+                  </div>
+                </div>
+
+                <div class="col-12 d-flex flex-column flex-sm-row gap-3 mt-2">
+                  <button type="submit" class="btn aa-btn-primary btn-lg px-4" id="submitBtn">
+                    <i class="fa-solid fa-paper-plane me-2" aria-hidden="true"></i>Submit Enquiry
+                  </button>
+                  <button type="reset" class="btn aa-btn-ghost btn-lg px-4" id="resetBtn">
+                    <i class="fa-solid fa-rotate-left me-2" aria-hidden="true"></i>Reset Form
+                  </button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MAP / LOCATION SECTION ============ -->
+    <section class="aa-section" id="findUs" aria-label="Find our location">
+      <div class="container">
+        <div class="text-center mb-5 aa-reveal">
+          <p class="aa-eyebrow">BASE CAMP</p>
+          <h2 class="aa-section-title">Find Us</h2>
+          <p class="aa-section-sub">Locate our center, or share your position for approximate distance guidance.</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7 aa-reveal">
+            <div class="aa-map-wrap">
+              <!-- OpenStreetMap embed (no API key required) -->
+              <iframe
+                title="Alpine Ascents approximate location map"
+                class="aa-map-frame"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-122.3721%2C47.5980%2C-122.3021%2C47.6480&amp;layer=mapnik&amp;marker=47.6230%2C-122.3371"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              <div class="aa-map-fallback d-none" id="mapFallback">
+                <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+                <p>Map preview unavailable. Our center is located in Seattle, Washington, USA.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 aa-reveal">
+            <div class="aa-card aa-location-card h-100">
+              <h3 class="aa-card-title"><i class="fa-solid fa-mountain-sun me-2" aria-hidden="true"></i>Alpine Ascents Center</h3>
+              <p class="aa-card-text aa-muted">Mountain Adventure Center<br>Seattle, Washington, USA</p>
+              <hr class="aa-hr">
+              <button type="button" class="btn aa-btn-outline w-100 mb-3" id="detectLocationBtn">
+                <i class="fa-solid fa-crosshairs me-2" aria-hidden="true"></i>Detect My Location
+              </button>
+              <div id="geoStatus" class="aa-geo-status" aria-live="polite">
+                <i class="fa-solid fa-circle-info me-2" aria-hidden="true"></i>
+                <span>Your location has not been detected yet.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EMERGENCY / SAFETY NOTICE ============ -->
+    <section class="aa-safety-section" id="safety" aria-label="Emergency safety notice">
+      <div class="container">
+        <div class="aa-safety-box aa-reveal">
+          <div class="aa-safety-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+          <div class="aa-safety-content">
+            <h2 class="aa-safety-title">Mountain Safety Comes First</h2>
+            <p class="aa-safety-text">
+              For emergencies during a climb or expedition, contact the appropriate local emergency or rescue
+              service immediately. Alpine Ascents contact information should not replace official emergency services.
+            </p>
+            <a href="#guidelines" class="btn aa-btn-outline-light">
+              <i class="fa-solid fa-book-open me-2" aria-hidden="true"></i>View Safety Guidelines
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ SECTION ============ -->
+    <section class="aa-section aa-section-alt" id="faq" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-9">
+
+            <div class="text-center mb-5 aa-reveal">
+              <p class="aa-eyebrow">QUICK ANSWERS</p>
+              <h2 class="aa-section-title">Contact FAQs</h2>
+            </div>
+
+            <div class="accordion aa-accordion aa-reveal" id="contactFaqAccordion">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                    How can I enquire about an expedition?
+                  </button>
+                </h3>
+                <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1"
+                  data-bs-parent="#contactFaqAccordion">
+                  <div class="accordion-body">
+                    Fill out the enquiry form above and select "Mountaineering Expedition" as your enquiry type.
+                    Include your preferred region, dates and experience level so our team can respond accurately.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                    Can beginners contact Alpine Ascents?
+                  </button>
+                </h3>
+                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2"
+                  data-bs-parent="#contactFaqAccordion">
+                  <div class="accordion-body">
+                    Absolutely. Select "Beginner" under Experience Level in the form, and our team will point you
+                    toward suitable training programs and introductory routes.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                    Can I ask about safety requirements?
+                  </button>
+                </h3>
+                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3"
+                  data-bs-parent="#contactFaqAccordion">
+                  <div class="accordion-body">
+                    Yes, choose "Safety Information" as your enquiry type. For active emergencies, always contact
+                    local emergency or rescue services first.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                    Can groups or clubs contact the organization?
+                  </button>
+                </h3>
+                <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4"
+                  data-bs-parent="#contactFaqAccordion">
+                  <div class="accordion-body">
+                    Yes. Select "Group/Club Information" as the enquiry type and mention your group size and goals
+                    in the message field.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                    How quickly will my enquiry receive a response?
+                  </button>
+                </h3>
+                <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5"
+                  data-bs-parent="#contactFaqAccordion">
+                  <div class="accordion-body">
+                    Our team typically responds within 2 business days. Urgent safety-related matters should go
+                    through local emergency services rather than this form.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOCIAL / CONNECTION SECTION ============ -->
+    <section class="aa-section aa-social-section" aria-label="Social media">
+      <div class="container text-center aa-reveal">
+        <p class="aa-eyebrow">STAY CONNECTED</p>
+        <h2 class="aa-section-title">Connect With the Climbing Community</h2>
+        <p class="aa-section-sub mb-4">Follow our expeditions, training tips and community stories.</p>
+
+        <div class="aa-social-icons">
+          <a href="#" class="aa-social-icon" aria-label="Alpine Ascents on Facebook (demo link)">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="aa-social-icon" aria-label="Alpine Ascents on Instagram (demo link)">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="aa-social-icon" aria-label="Alpine Ascents on YouTube (demo link)">
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="aa-social-icon" aria-label="Alpine Ascents on LinkedIn (demo link)">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+<!-- FOOTER-->
+    <footer class="aura-footer">
+        <div class="footer-aura"></div>
+        <div class="mountain-line">
+            <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+                <path d="
+                M0 150
+                L120 95
+                L190 125
+                L290 45
+                L370 110
+                L470 65
+                L550 125
+                L660 35
+                L760 115
+                L850 70
+                L940 125
+                L1050 50
+                L1140 105
+                L1240 35
+                L1320 100
+                L1440 55
+                L1440 180
+                L0 180
+                Z
+            " />
+            </svg>
+        </div>
+        <div class="footer-inner">
+            <div class="footer-intro">
+                <div class="footer-logo">
+                    <img src="./img/Gemini_Generated_Image_rip6w4rip6w4rip6.png" alt="Alpine Aura">
+                    <span>ALPINE AURA</span>
+                </div>
+                <p>
+                    Explore beyond the ordinary.
+                    Discover mountains, stories and
+                    unforgettable adventures.
+                </p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Ladakh%2C%20India" target="_blank"
+                    rel="noopener noreferrer" class="map-btn">
+                    <span>⌖</span>
+                    Explore on Map
+                    <span class="arrow">↗</span>
+                </a>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-group">
+                    <h4>EXPLORE</h4>
+                    <a href="history.html">
+                        Mountains
+                    </a>
+                    <a href="history.html">
+                        History
+                    </a>
+                    <a href="activities.html">
+                        Activities
+                    </a>
+                    <a href="gallery.html">
+                        Gallery
+                    </a>
+                </div>
+                <div class="footer-group">
+                    <h4>ALPINE AURA</h4>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                    <a href="index.html#reviews">
+                        Reviews
+                    </a>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                    <a href="travel-guide.html">
+                        Travel Guide
+                    </a>
+                </div>
+            </div>
+            <div class="footer-stats">
+                <div class="stat-heading">
+                    <span class="pulse"></span>
+                    PEOPLE WHO EXPLORED
+                </div>
+                <div class="visitor-number" id="visitorCount">
+                    12,847
+                </div>
+                <p>
+                    explorers have visited
+                    Alpine Aura
+                </p>
+                <div class="stat-line"></div>
+                <span class="journey-text">
+                    YOUR JOURNEY STARTS HERE
+                </span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>
+                © 2026 Alpine Aura. All Rights Reserved.
+            </span>
+            <div class="socials">
+                <a href="#" aria-label="Instagram">
+                    ig
+                </a>
+                <a href="#" aria-label="Facebook">
+                    f
+                </a>
+                <a href="#" aria-label="YouTube">
+                    yt
+                </a>
+            </div>
+            <span class="footer-slogan">
+                BORN TO EXPLORE
+            </span>
+        </div>
+    </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button id="backToTopBtn" class="aa-back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ============ BOTTOM TICKER ============ -->
+  <div class="aa-ticker" role="marquee" aria-label="Live status ticker">
+    <div class="aa-ticker-track" id="tickerTrack">
+      <!-- content injected + duplicated by JS for seamless loop -->
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Page script -->
+  <script src="contact.js"></script>
+</body>
+</html>

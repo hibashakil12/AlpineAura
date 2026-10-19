@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpine Aura | Majestic Mountain Expeditions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="responsive.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;0,900;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="index.css">
+</head>
+<body id="home">
+  <!-- 🌟 FLOATING DOUBLE-PILL LUXURY NAVBAR -->
+  <div class="floating-nav-container">
+    <nav class="navbar navbar-expand-lg master-pill-navbar">
+      <div class="container-fluid px-2 px-lg-4">
+        <!-- Left: Local Image Logo + Name (Redirects to index.html) -->
+        <a class="navbar-brand d-flex align-items-center gap-2 m-0 text-decoration-none flex-shrink-0"
+          href="index.html">
+          <img src="./img/Gemini_Generated_Image_rip6w4rip6w4rip6.png" alt="Logo" class="brand-local-img">
+          <span class="text-white fw-bold">Alpine<span class="brand-highlight">Aura</span></span>
+        </a>
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 shadow-none text-white d-lg-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#floatingNavContent" aria-controls="floatingNavContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars-staggered fs-4"></i>
+        </button>
+        <!-- Center: All 9 Multi-Page Navigation Links -->
+        <div class="collapse navbar-collapse justify-content-center flex-grow-1 mx-lg-4" id="floatingNavContent">
+          <ul class="navbar-nav inner-links-pill align-items-lg-center my-2 my-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="techniques.html">Techniques</a></li>
+            <li class="nav-item"><a class="nav-link" href="shelters.html">Shelters</a></li>
+            <li class="nav-item"><a class="nav-link active" href="hazards.html">Hazards</a></li>
+            <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Right: Gradient Stylish Action Button -->
+        <div class="d-none d-lg-flex flex-shrink-0">
+          <a href="contact.html" class="btn btn-gradient-action">
+            <span>Book Journey</span>
+            <i class="fa-solid fa-arrow-right-long ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+<!-- Inline SVG icon sprite (7 category icons, reused via <use>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="icon-terrain" viewBox="0 0 24 24"><path d="M3 20 L9 8 L13 15 L16 10 L21 20 Z" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-weather" viewBox="0 0 24 24"><path d="M7 17a4 4 0 1 1 1.2-7.8A5 5 0 0 1 18 11a3.5 3.5 0 0 1-1 6.9H7Z" stroke-width="1.6"/><path d="M9 20l-1 2M13 20l-1 2M17 19l-1 2" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="icon-altitude" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" stroke-width="1.6"/><path d="M12 7v5l3.2 2" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="icon-environmental" viewBox="0 0 24 24"><path d="M12 3c3 4 5.5 7.4 5.5 10.5A5.5 5.5 0 0 1 6.5 13.5C6.5 10.4 9 7 12 3Z" stroke-width="1.6"/></symbol>
+  <symbol id="icon-technical" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3" stroke-width="1.6"/><circle cx="16" cy="16" r="3" stroke-width="1.6"/><path d="M10.2 9.8 13.8 13.4" stroke-width="1.6"/></symbol>
+  <symbol id="icon-wildlife" viewBox="0 0 24 24"><path d="M12 20c-4-1-6-4-6-7.5C6 8.5 8.5 6 12 6s6 2.5 6 6.5c0 3.5-2 6.5-6 7.5Z" stroke-width="1.6"/><path d="M9 8 8 5M15 8l1-3" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="icon-human" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3" stroke-width="1.6"/><path d="M6 21c0-3.5 2.7-6 6-6s6 2.5 6 6" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" stroke-width="1.6"/><path d="M20 20l-4.3-4.3" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- ============ HERO ============ -->
+<section class="hazard-hero" aria-labelledby="hazard-hero-title">
+  <div class="contour-field" aria-hidden="true"></div>
+  <div class="container hazard-hero__content">
+    <span class="eyebrow">29 hazards · 7 categories · 4 risk tiers</span>
+    <h1 id="hazard-hero-title" class="fade-up">Know the mountain <em>before</em><br>it knows you.</h1>
+    <p class="lede fade-up">A field atlas of the terrain, weather, altitude, environmental, technical, wildlife and human hazards mountaineers face — with warning signs, prevention and what to do when it happens.</p>
+
+    <div class="hero-stats fade-up">
+      <div class="hero-stat">
+        <div class="hero-stat__num">29</div>
+        <div class="hero-stat__label">Cataloged Hazards</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat__num">07</div>
+        <div class="hero-stat__label">Categories</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat__num">04</div>
+        <div class="hero-stat__label">Risk Tiers</div>
+      </div>
+    </div>
+
+    <div class="risk-legend fade-up" role="list" aria-label="Risk level legend">
+      <span class="risk-legend__item" role="listitem"><span class="dot dot--Low"></span>Low</span>
+      <span class="risk-legend__item" role="listitem"><span class="dot dot--Moderate"></span>Moderate</span>
+      <span class="risk-legend__item" role="listitem"><span class="dot dot--High"></span>High</span>
+      <span class="risk-legend__item" role="listitem"><span class="dot dot--Extreme"></span>Extreme</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FILTER BAR ============ -->
+<div class="filter-bar">
+  <div class="container filter-bar__row">
+    <div class="filter-group" id="category-filters" role="group" aria-label="Filter by category">
+      <span class="filter-group__label">Category</span>
+      <!-- buttons injected by JS -->
+    </div>
+    <div class="filter-group" id="risk-filters" role="group" aria-label="Filter by risk level">
+      <span class="filter-group__label">Risk</span>
+      <!-- buttons injected by JS -->
+    </div>
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24"><use href="#icon-search"/></svg>
+      <input type="search" id="hazard-search" placeholder="Search hazards…" aria-label="Search hazards">
+    </div>
+  </div>
+</div>
+
+<!-- ============ HAZARD GRID ============ -->
+<main class="hazard-section">
+  <div class="container">
+    <p class="result-count" id="result-count" aria-live="polite"></p>
+    <div class="hazard-grid" id="hazard-grid" aria-live="polite">
+      <!-- cards injected by JS -->
+    </div>
+  </div>
+</main>
+
+<!-- ============ RISK SCALE EXPLAINER ============ -->
+<section class="scale-explainer" aria-labelledby="scale-title">
+  <div class="container">
+    <div class="scale-explainer__head">
+      <span class="eyebrow">How to read this atlas</span>
+      <h2 id="scale-title">The four-tier risk scale</h2>
+      <p>Every hazard is rated the way a mountain bulletin rates avalanche danger — by how likely it is to occur and how severe the consequences are if it does. Ratings are a general guide only; always check current local conditions and forecasts before you climb.</p>
+    </div>
+    <div class="scale-grid">
+      <div class="scale-card" style="--risk-color: var(--risk-low);">
+        <div class="scale-card__level">🟢 Low</div>
+        <p>Manageable with basic awareness. Unlikely to cause serious harm if reasonable precautions are followed.</p>
+      </div>
+      <div class="scale-card" style="--risk-color: var(--risk-moderate);">
+        <div class="scale-card__level">🟡 Moderate</div>
+        <p>Requires active management — proper gear, technique, and route judgement meaningfully reduce the risk.</p>
+      </div>
+      <div class="scale-card" style="--risk-color: var(--risk-high);">
+        <div class="scale-card__level">🟠 High</div>
+        <p>Serious consequences are plausible. Demands experience, planning, and constant reassessment on route.</p>
+      </div>
+      <div class="scale-card" style="--risk-color: var(--risk-extreme);">
+        <div class="scale-card__level">🔴 Extreme</div>
+        <p>Life-threatening. Can escalate within minutes; margin for error is minimal even for experienced climbers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HAZARD DETAIL MODAL ============ -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="hazard-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" id="hazard-modal">
+    <button class="hazard-modal__close" id="modal-close" aria-label="Close hazard details">&times;</button>
+    <span class="eyebrow" id="modal-category"></span>
+    <h2 id="modal-title"></h2>
+    <p class="hazard-modal__meta" id="modal-meta"></p>
+    <p class="hazard-modal__desc" id="modal-desc"></p>
+
+    <div class="bulletin-block">
+      <div class="bulletin-block__label">⚠ Warning Signs</div>
+      <p id="modal-warning"></p>
+    </div>
+    <div class="bulletin-block">
+      <div class="bulletin-block__label">🛡 Prevention</div>
+      <p id="modal-prevention"></p>
+    </div>
+    <div class="bulletin-block">
+      <div class="bulletin-block__label">⛑ What To Do</div>
+      <p id="modal-action"></p>
+    </div>
+  </div>
+</div>
+
+    <!-- FOOTER -->
+  <footer class="aura-footer">
+    <div class="footer-aura"></div>
+    <div class="mountain-line">
+      <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+        <path d="
+                M0 150
+                L120 95
+                L190 125
+                L290 45
+                L370 110
+                L470 65
+                L550 125
+                L660 35
+                L760 115
+                L850 70
+                L940 125
+                L1050 50
+                L1140 105
+                L1240 35
+                L1320 100
+                L1440 55
+                L1440 180
+                L0 180
+                Z
+            " />
+      </svg>
+    </div>
+    <div class="footer-inner">
+      <div class="footer-intro">
+        <div class="footer-logo">
+          <img src="./img/Gemini_Generated_Image_rip6w4rip6w4rip6.png" alt="Alpine Aura">
+          <span>ALPINE AURA</span>
+        </div>
+        <p>
+          Explore beyond the ordinary.
+          Discover mountains, stories and
+          unforgettable adventures.
+        </p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Ladakh%2C%20India" target="_blank"
+          rel="noopener noreferrer" class="map-btn">
+          <span>⌖</span>
+          Explore on Map
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-group">
+          <h4>EXPLORE</h4>
+          <a href="history.html">
+            Mountains
+          </a>
+          <a href="history.html">
+            History
+          </a>
+          <a href="activities.html">
+            Activities
+          </a>
+          <a href="gallery.html">
+            Gallery
+          </a>
+        </div>
+        <div class="footer-group">
+          <h4>ALPINE AURA</h4>
+          <a href="about.html">
+            About Us
+          </a>
+          <a href="index.html#reviews">
+            Reviews
+          </a>
+          <a href="contact.html">
+            Contact
+          </a>
+          <a href="travel-guide.html">
+            Travel Guide
+          </a>
+        </div>
+      </div>
+      <div class="footer-stats">
+        <div class="stat-heading">
+          <span class="pulse"></span>
+          PEOPLE WHO EXPLORED
+        </div>
+        <div class="visitor-number" id="visitorCount">
+          12,847
+        </div>
+        <p>
+          explorers have visited
+          Alpine Aura
+        </p>
+        <div class="stat-line"></div>
+        <span class="journey-text">
+          YOUR JOURNEY STARTS HERE
+        </span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>
+        © 2026 Alpine Aura. All Rights Reserved.
+      </span>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">
+          ig
+        </a>
+        <a href="#" aria-label="Facebook">
+          f
+        </a>
+        <a href="#" aria-label="YouTube">
+          yt
+        </a>
+      </div>
+      <span class="footer-slogan">
+        BORN TO EXPLORE
+      </span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="data.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Aura | Majestic Mountain Expeditions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body id="home">
+
+    <!-- FLOATING NAVBAR -->
+    <div class="floating-nav-container">
+        <nav class="navbar navbar-expand-lg master-pill-navbar">
+            <div class="container-fluid px-2 px-lg-4">
+                <a class="navbar-brand d-flex align-items-center gap-2 m-0 text-decoration-none flex-shrink-0"
+                    href="index.html">
+                    <img src="./img/Gemini_Generated_Image_rip6w4rip6w4rip6.png" alt="Logo" class="brand-local-img">
+                    <span class="text-white fw-bold">Alpine<span class="brand-highlight">Aura</span></span>
+                </a>
+                <button class="navbar-toggler border-0 shadow-none text-white d-lg-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#floatingNavContent" aria-controls="floatingNavContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered fs-4"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center flex-grow-1 mx-lg-4"
+                    id="floatingNavContent">
+                    <ul class="navbar-nav inner-links-pill align-items-lg-center my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="techniques.html">Techniques</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="shelters.html">Shelters</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hazards.html">Hazards</a></li>
+                        <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="d-none d-lg-flex flex-shrink-0">
+                    <a href="contact.html" class="btn btn-gradient-action ">
+                        <span>Book Journey</span>
+                        <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="shelter-premium-hero">
+        <div class="hero-orb orb-one"></div>
+        <div class="hero-orb orb-two"></div>
+        <div class="hero-bg-title">
+            SHELTER
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>✦</span>
+                ALPINE AURA
+                <span>✦</span>
+            </div>
+            <h1>
+                Find Your
+                <span>Safe Haven</span>
+            </h1>
+            <p>
+                A peaceful place to rest, recover and reconnect
+                with the mountains before your next destination.
+            </p>
+            <div class="hero-buttons">
+                <a href="#" class="hero-main-btn">
+                    Explore Shelters
+                    <span>↗</span>
+                </a>
+                <a href="#" class="hero-link">
+                    Discover More
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-bottom-info">
+            <div>
+                <strong>01</strong>
+                <span>SAFE HAVENS</span>
+            </div>
+            <div class="info-line"></div>
+            <div>
+                <strong>∞</strong>
+                <span>ADVENTURES</span>
+            </div>
+            <div class="info-line"></div>
+            <div>
+                <strong>✦</strong>
+                <span>ABOVE THE CLOUDS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="shelter-intro">
+        <div class="intro-heading">
+            <span class="intro-label">
+                UNDERSTANDING SHELTERS
+            </span>
+            <h2>
+                Rest Beneath
+                <span>the Mountains</span>
+            </h2>
+            <p>
+                Shelters provide hikers with a safe place to rest,
+                recover and stay protected during their mountain journey.
+            </p>
+        </div>
+        <div class="intro-cards">
+            <!-- CARD 1 -->
+            <div class="intro-card slide-left">
+                <span class="card-number">01</span>
+                <div class="intro-icon">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <h3>What Are Shelters?</h3>
+                <p>
+                    Mountain shelters are safe resting places built
+                    along hiking routes where hikers can pause,
+                    sleep and protect themselves from harsh weather.
+                </p>
+                <div class="card-line"></div>
+                <span class="card-tag">
+                    SAFE RESTING PLACES
+                </span>
+            </div>
+            <!-- CARD 2 -->
+            <div class="intro-card">
+                <span class="card-number">02</span>
+                <div class="intro-icon">
+                    <i class="fa-solid fa-person-hiking"></i>
+                </div>
+                <h3>Why Hikers Need Them</h3>
+                <p>
+                    Long mountain journeys can be exhausting.
+                    Shelters give hikers a chance to rest, recover
+                    their energy and continue their journey safely.
+                </p>
+                <div class="card-line"></div>
+                <span class="card-tag">
+                    REST & RECOVERY
+                </span>
+            </div>
+            <!-- CARD 3 -->
+            <div class="intro-card slide-right">
+                <span class="card-number">03</span>
+                <div class="intro-icon">
+                    <i class="fa-solid fa-kit-medical"></i>
+                </div>
+                <h3>Emergency Role</h3>
+                <p>
+                    During sudden storms, injuries or extreme weather,
+                    shelters can provide temporary protection and
+                    become an important emergency refuge.
+                </p>
+                <div class="card-line"></div>
+                <span class="card-tag">
+                    EMERGENCY REFUGE
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED SHELTERS SECTION -->
+    <section class="featured-shelters" id="featuredShelters">
+        <div class="container">
+            <div class="shelter-heading text-center">
+                <span class="shelter-eyebrow">DISCOVER YOUR REFUGE</span>
+                <h2>Shelters Beyond <span>The Trail</span></h2>
+                <div class="heading-line"></div>
+                <p>Discover beautiful mountain shelters designed for rest, adventure, and safety along the trail.</p>
+            </div>
+            <div class="shelter-filters d-flex justify-content-center flex-wrap gap-2">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fa-solid fa-layer-group"></i> All <small>30</small>
+                </button>
+                <button class="filter-btn" data-filter="permanent">
+                    <i class="fa-solid fa-house"></i> Permanent <small>10</small>
+                </button>
+                <button class="filter-btn" data-filter="portable">
+                    <i class="fa-solid fa-tent"></i> Portable <small>10</small>
+                </button>
+                <button class="filter-btn" data-filter="emergency">
+                    <i class="fa-solid fa-triangle-exclamation"></i> Emergency <small>10</small>
+                </button>
+            </div>
+
+            <!-- Shelter Grid (30 Mixed Cards) -->
+            <div class="row g-4 shelter-grid">
+
+                <!-- 1. Permanent -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="permanent">
+                    <article class="shelter-card" data-type="permanent">
+                        <div class="shelter-image">
+                            <img src="./img shlter/alpine mountain hut.jpg" alt="Alpine Mountain Hut" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-house"></i> PERMANENT</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Alpine Mountain Hut</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Swiss Alps</span>
+                                <span><i class="fa-solid fa-mountain"></i> 3,850 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Alpine Mountain Hut', 'Swiss Alps', '3,850 m', 'A permanent mountain refuge offering warmth, rest, and essential facilities for hikers.', 'Hiking · Trekking · Overnight Rest', ['Beds', 'Heating', 'Food', 'Water'], './img shlter/alpine mountain hut.jpg', 'PERMANENT', 'fa-solid fa-house')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 2. Portable -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="portable">
+                    <article class="shelter-card" data-type="portable">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Alpine Expedition Tent.avif" alt="Alpine Expedition Tent"
+                                loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-tent"></i> PORTABLE</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Alpine Expedition Tent</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Swiss Alps</span>
+                                <span><i class="fa-solid fa-mountain"></i> 3,600 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Alpine Expedition Tent', 'Swiss Alps', '3,600 m', 'A lightweight expedition tent designed for flexible mountain travel.', 'Hiking · Trekking · Overnight Rest', ['Lightweight', 'Waterproof', 'Windproof', 'Compact'], './img shlter/Alpine Expedition Tent.avif', 'PORTABLE', 'fa-solid fa-tent')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 3. Emergency -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="emergency">
+                    <article class="shelter-card" data-type="emergency">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Storm Safety shelter.jpg" alt="Storm Safety Shelter" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-triangle-exclamation"></i>
+                                EMERGENCY</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Storm Safety Shelter</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Karakoram</span>
+                                <span><i class="fa-solid fa-mountain"></i> 4,600 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Storm Safety Shelter', 'Karakoram', '4,600 m', 'A secure emergency shelter providing immediate protection during storms.', 'Hiking · Trekking · Overnight Rest', ['Radio', 'First Aid', 'Heating', 'Water'], './img shlter/Storm Safety shelter.jpg', 'EMERGENCY', 'fa-solid fa-triangle-exclamation')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 4. Permanent -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="permanent">
+                    <article class="shelter-card" data-type="permanent">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Ladakh Mountain Lodge.jpg" alt="Ladakh Mountain Lodge"
+                                loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-house"></i> PERMANENT</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Ladakh Mountain Lodge</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Ladakh</span>
+                                <span><i class="fa-solid fa-mountain"></i> 4,500 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Ladakh Mountain Lodge', 'Ladakh', '4,500 m', 'A peaceful high-altitude shelter surrounded by dramatic Himalayan landscapes.', 'Hiking · Trekking · Overnight Rest', ['Beds', 'Food', 'Fireplace', 'Water'], './img shlter/Ladakh Mountain Lodge.jpg', 'PERMANENT', 'fa-solid fa-house')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 5. Portable -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="portable">
+                    <article class="shelter-card" data-type="portable">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Highland Trek Tent.avif" alt="Highland Trek Tent" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-tent"></i> PORTABLE</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Highland Trek Tent</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Ladakh</span>
+                                <span><i class="fa-solid fa-mountain"></i> 4,200 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Highland Trek Tent', 'Ladakh', '4,200 m', 'A compact portable shelter perfect for remote mountain trails.', 'Hiking · Trekking · Overnight Rest', ['Portable', 'Waterproof', 'Windproof', 'Compact'], './img shlter/Highland Trek Tent.avif', 'PORTABLE', 'fa-solid fa-tent')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 6. Emergency -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="emergency">
+                    <article class="shelter-card" data-type="emergency">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Avalanche Refuge.jpg" alt="Avalanche Refuge" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-triangle-exclamation"></i>
+                                EMERGENCY</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Avalanche Refuge</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Swiss Alps</span>
+                                <span><i class="fa-solid fa-mountain"></i> 3,900 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Avalanche Refuge', 'Swiss Alps', '3,900 m', 'A reinforced refuge designed to protect hikers during avalanche conditions.', 'Hiking · Trekking · Overnight Rest', ['Reinforced', 'First Aid', 'Radio', 'Food'], './img shlter/Avalanche Refuge.jpg', 'EMERGENCY', 'fa-solid fa-triangle-exclamation')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 7. Permanent -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="permanent">
+                    <article class="shelter-card" data-type="permanent">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Karakoram Lodge.jpg" alt="Karakoram Lodge" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-house"></i> PERMANENT</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Karakoram Lodge</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Gilgit-Baltistan</span>
+                                <span><i class="fa-solid fa-mountain"></i> 3,900 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Karakoram Lodge', 'Gilgit-Baltistan', '3,900 m', 'A sturdy mountain lodge located among the spectacular peaks of the Karakoram.', 'Hiking · Trekking · Overnight Rest', ['Rooms', 'Meals', 'Heating', 'Guide'], './img shlter/Karakoram Lodge.jpg', 'PERMANENT', 'fa-solid fa-house')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 8. Portable -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="portable">
+                    <article class="shelter-card" data-type="portable">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Karakoram Camp.jpg" alt="Karakoram Camp" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-tent"></i> PORTABLE</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Karakoram Camp</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Hunza</span>
+                                <span><i class="fa-solid fa-mountain"></i> 3,800 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Karakoram Camp', 'Hunza', '3,800 m', 'A practical expedition camp offering temporary protection in remote terrain.', 'Hiking · Trekking · Overnight Rest', ['Tent', 'Sleeping Bags', 'Kitchen', 'Water'], './img shlter/Karakoram Camp.jpg', 'PORTABLE', 'fa-solid fa-tent')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 9. Emergency -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="emergency">
+                    <article class="shelter-card" data-type="emergency">
+                        <div class="shelter-image">
+                            <img src="./img shlter/High-Altitude Rescue Hut.jpg" alt="High-Altitude Rescue Hut"
+                                loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-triangle-exclamation"></i>
+                                EMERGENCY</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>High-Altitude Rescue Hut</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Himalayas</span>
+                                <span><i class="fa-solid fa-mountain"></i> 5,200 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('High-Altitude Rescue Hut', 'Himalayas', '5,200 m', 'A compact rescue shelter providing essential protection during altitude emergencies.', 'Hiking · Trekking · Overnight Rest', ['Oxygen', 'First Aid', 'Radio', 'Heating'], './img shlter/High-Altitude Rescue Hut.jpg', 'EMERGENCY', 'fa-solid fa-triangle-exclamation')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 10. Permanent -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="permanent">
+                    <article class="shelter-card" data-type="permanent">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Himalayan Rest House.jpg" alt="Himalayan Rest House" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-house"></i> PERMANENT</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Himalayan Rest House</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Nepal Himalayas</span>
+                                <span><i class="fa-solid fa-mountain"></i> 4,200 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Himalayan Rest House', 'Nepal Himalayas', '4,200 m', 'A traditional rest house providing trekkers with a comfortable place to recover.', 'Hiking · Trekking · Overnight Rest', ['Beds', 'Meals', 'Water', 'Fireplace'], './img shlter/Himalayan Rest House.jpg', 'PERMANENT', 'fa-solid fa-house')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 11. Portable -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="portable">
+                    <article class="shelter-card" data-type="portable">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Summit Base Tent.webp" alt="Summit Base Tent" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-tent"></i> PORTABLE</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Summit Base Tent</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Nepal</span>
+                                <span><i class="fa-solid fa-mountain"></i> 5,000 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Summit Base Tent', 'Nepal', '5,000 m', 'A strong high-altitude tent for demanding summit routes.', 'Hiking · Trekking · Overnight Rest', ['Insulated', 'Windproof', 'Sleeping Area', 'Storage'], './img shlter/Summit Base Tent.webp', 'PORTABLE', 'fa-solid fa-tent')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 12. Emergency -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="emergency">
+                    <article class="shelter-card" data-type="emergency">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Mountain Storm Refuge.jpg" alt="Mountain Storm Refuge"
+                                loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-triangle-exclamation"></i>
+                                EMERGENCY</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Mountain Storm Refuge</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Ladakh</span>
+                                <span><i class="fa-solid fa-mountain"></i> 4,700 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Mountain Storm Refuge', 'Ladakh', '4,700 m', 'A quick-access refuge offering protection from sudden mountain storms.', 'Hiking · Trekking · Overnight Rest', ['Heating', 'Radio', 'Water', 'Blankets'], './img shlter/Mountain Storm Refuge.jpg', 'EMERGENCY', 'fa-solid fa-triangle-exclamation')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 13. Permanent -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="permanent">
+                    <article class="shelter-card" data-type="permanent">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Mountain View Lodge.jpg" alt="Mountain View Lodge" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-house"></i> PERMANENT</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Mountain View Lodge</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Manali</span>
+                                <span><i class="fa-solid fa-mountain"></i> 3,300 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Mountain View Lodge', 'Manali', '3,300 m', 'A scenic lodge with panoramic mountain views and a warm atmosphere.', 'Hiking · Trekking · Overnight Rest', ['Rooms', 'Balcony', 'Food', 'Heating'], './img shlter/Mountain View Lodge.jpg', 'PERMANENT', 'fa-solid fa-house')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 14. Portable -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="portable">
+                    <article class="shelter-card" data-type="portable">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Desert Mountain Camp.jpg" alt="Desert Mountain Camp" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-tent"></i> PORTABLE</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Desert Mountain Camp</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Atlas Mountains</span>
+                                <span><i class="fa-solid fa-mountain"></i> 2,800 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Desert Mountain Camp', 'Atlas Mountains', '2,800 m', 'A comfortable portable camp combining mobility with adventure.', 'Hiking · Trekking · Overnight Rest', ['Tent', 'Beds', 'Lighting', 'Food'], './img shlter/Desert Mountain Camp.jpg', 'PORTABLE', 'fa-solid fa-tent')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 15. Emergency -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="emergency">
+                    <article class="shelter-card" data-type="emergency">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Rescue Point Shelter.jpg" alt="Rescue Point Shelter" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-triangle-exclamation"></i>
+                                EMERGENCY</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Rescue Point Shelter</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Andes</span>
+                                <span><i class="fa-solid fa-mountain"></i> 4,500 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Rescue Point Shelter', 'Andes', '4,500 m', 'An emergency shelter positioned along challenging mountain routes.', 'Hiking · Trekking · Overnight Rest', ['First Aid', 'Radio', 'Water', 'Food'], './img shlter/Rescue Point Shelter.jpg', 'EMERGENCY', 'fa-solid fa-triangle-exclamation')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 16. Permanent -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="permanent">
+                    <article class="shelter-card" data-type="permanent">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Summit Rest Lodge.jpg" alt="Summit Rest Lodge" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-house"></i> PERMANENT</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Summit Rest Lodge</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Andes</span>
+                                <span><i class="fa-solid fa-mountain"></i> 4,000 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Summit Rest Lodge', 'Andes', '4,000 m', 'A permanent highland lodge providing reliable shelter for trekkers.', 'Hiking · Trekking · Overnight Rest', ['Beds', 'Food', 'Water', 'First Aid'], './img shlter/Summit Rest Lodge.jpg', 'PERMANENT', 'fa-solid fa-house')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 17. Portable -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="portable">
+                    <article class="shelter-card" data-type="portable">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Glacier Expedition Camp.jpg" alt="Glacier Expedition Camp"
+                                loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-tent"></i> PORTABLE</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Glacier Expedition Camp</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Patagonia</span>
+                                <span><i class="fa-solid fa-mountain"></i> 3,200 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Glacier Expedition Camp', 'Patagonia', '3,200 m', 'A temporary expedition shelter built for challenging glacier environments.', 'Hiking · Trekking · Overnight Rest', ['Insulated', 'Heating', 'Radio', 'Storage'], './img shlter/Glacier Expedition Camp.jpg', 'PORTABLE', 'fa-solid fa-tent')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 18. Emergency -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="emergency">
+                    <article class="shelter-card" data-type="emergency">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Blizzard Safety Hut.jpg" alt="Blizzard Safety Hut" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-triangle-exclamation"></i>
+                                EMERGENCY</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Blizzard Safety Hut</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Rocky Mountains</span>
+                                <span><i class="fa-solid fa-mountain"></i> 3,800 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Blizzard Safety Hut', 'Rocky Mountains', '3,800 m', 'An insulated emergency hut designed for severe snow and blizzard conditions.', 'Hiking · Trekking · Overnight Rest', ['Insulated', 'Heating', 'Radio', 'Blankets'], './img shlter/Blizzard Safety Hut.jpg', 'EMERGENCY', 'fa-solid fa-triangle-exclamation')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 19. Permanent -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="permanent">
+                    <article class="shelter-card" data-type="permanent">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Glacier Peak Lodge.jpg" alt="Glacier Peak Lodge" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-house"></i> PERMANENT</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Glacier Peak Lodge</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Alaska</span>
+                                <span><i class="fa-solid fa-mountain"></i> 3,500 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Glacier Peak Lodge', 'Alaska', '3,500 m', 'A rugged lodge positioned near glacier routes and alpine trails.', 'Hiking · Trekking · Overnight Rest', ['Beds', 'Heating', 'Kitchen', 'Radio'], './img shlter/Glacier Peak Lodge.jpg', 'PERMANENT', 'fa-solid fa-house')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 20. Portable -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="portable">
+                    <article class="shelter-card" data-type="portable">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Forest Trek Camp.jpg" alt="Forest Trek Camp" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-tent"></i> PORTABLE</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Forest Trek Camp</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Rocky Mountains</span>
+                                <span><i class="fa-solid fa-mountain"></i> 2,600 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Forest Trek Camp', 'Rocky Mountains', '2,600 m', 'A simple portable shelter for remote forest and mountain trails.', 'Hiking · Trekking · Overnight Rest', ['Tent', 'Fire Kit', 'Sleeping Bags', 'Water'], './img shlter/Forest Trek Camp.jpg', 'PORTABLE', 'fa-solid fa-tent')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 21. Emergency -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="emergency">
+                    <article class="shelter-card" data-type="emergency">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Remote Trail Refuge.jpg" alt="Remote Trail Refuge" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-triangle-exclamation"></i>
+                                EMERGENCY</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Remote Trail Refuge</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Patagonia</span>
+                                <span><i class="fa-solid fa-mountain"></i> 3,100 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Remote Trail Refuge', 'Patagonia', '3,100 m', 'A remote safety shelter giving hikers a secure place while waiting for rescue.', 'Hiking · Trekking · Overnight Rest', ['Radio', 'First Aid', 'Water', 'Light'], './img shlter/Remote Trail Refuge.jpg', 'EMERGENCY', 'fa-solid fa-triangle-exclamation')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 22. Permanent -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="permanent">
+                    <article class="shelter-card" data-type="permanent">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Pine Ridge Hut.jpg" alt="Pine Ridge Hut" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-house"></i> PERMANENT</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Pine Ridge Hut</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Rocky Mountains</span>
+                                <span><i class="fa-solid fa-mountain"></i> 2,900 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Pine Ridge Hut', 'Rocky Mountains', '2,900 m', 'A cozy mountain hut surrounded by pine forests and peaceful trails.', 'Hiking · Trekking · Overnight Rest', ['Beds', 'Fireplace', 'Water', 'Food'], './img shlter/Pine Ridge Hut.jpg', 'PERMANENT', 'fa-solid fa-house')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 23. Portable -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="portable">
+                    <article class="shelter-card" data-type="portable">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Snow Ridge Camp.jpg" alt="Snow Ridge Camp" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-tent"></i> PORTABLE</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Snow Ridge Camp</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Himalayas</span>
+                                <span><i class="fa-solid fa-mountain"></i> 4,800 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Snow Ridge Camp', 'Himalayas', '4,800 m', 'A reinforced temporary camp designed for cold mountain environments.', 'Hiking · Trekking · Overnight Rest', ['Insulated', 'Windproof', 'Heating', 'Sleeping Bags'], './img shlter/Snow Ridge Camp.jpg', 'PORTABLE', 'fa-solid fa-tent')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 24. Emergency -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="emergency">
+                    <article class="shelter-card" data-type="emergency">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Mountain Rescue Cabin.jpg" alt="Mountain Rescue Cabin"
+                                loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-triangle-exclamation"></i>
+                                EMERGENCY</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Mountain Rescue Cabin</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> French Alps</span>
+                                <span><i class="fa-solid fa-mountain"></i> 3,500 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Mountain Rescue Cabin', 'French Alps', '3,500 m', 'A dedicated rescue cabin equipped with essential emergency supplies.', 'Hiking · Trekking · Overnight Rest', ['First Aid', 'Radio', 'Oxygen', 'Heating'], './img shlter/Mountain Rescue Cabin.jpg', 'EMERGENCY', 'fa-solid fa-triangle-exclamation')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 25. Permanent -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="permanent">
+                    <article class="shelter-card" data-type="permanent">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Peak Horizon Refuge.jpg" alt="Peak Horizon Refuge" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-house"></i> PERMANENT</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Peak Horizon Refuge</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> French Alps</span>
+                                <span><i class="fa-solid fa-mountain"></i> 3,700 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Peak Horizon Refuge', 'French Alps', '3,700 m', 'A modern mountain refuge designed for trekkers above the clouds.', 'Hiking · Trekking · Overnight Rest', ['Beds', 'Dining', 'Heating', 'First Aid'], './img shlter/Peak Horizon Refuge.jpg', 'PERMANENT', 'fa-solid fa-house')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 26. Portable -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="portable">
+                    <article class="shelter-card" data-type="portable">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Adventure Base Camp.jpg" alt="Adventure Base Camp" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-tent"></i> PORTABLE</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Adventure Base Camp</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Andes</span>
+                                <span><i class="fa-solid fa-mountain"></i> 4,100 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Adventure Base Camp', 'Andes', '4,100 m', 'A flexible expedition camp providing hikers with a comfortable base.', 'Hiking · Trekking · Overnight Rest', ['Tent', 'Kitchen', 'Beds', 'Lighting'], './img shlter/Adventure Base Camp.jpg', 'PORTABLE', 'fa-solid fa-tent')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 27. Emergency -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="emergency">
+                    <article class="shelter-card" data-type="emergency">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Cold Weather Refuge.jpg" alt="Cold Weather Refuge" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-triangle-exclamation"></i>
+                                EMERGENCY</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Cold Weather Refuge</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Himalayas</span>
+                                <span><i class="fa-solid fa-mountain"></i> 4,900 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Cold Weather Refuge', 'Himalayas', '4,900 m', 'A protected emergency refuge for extreme cold and high winds.', 'Hiking · Trekking · Overnight Rest', ['Heating', 'Blankets', 'Water', 'First Aid'], './img shlter/Cold Weather Refuge.jpg', 'EMERGENCY', 'fa-solid fa-triangle-exclamation')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 28. Permanent -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="permanent">
+                    <article class="shelter-card" data-type="permanent">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Everest Base Lodge.jpg" alt="Everest Base Lodge" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-house"></i> PERMANENT</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Everest Base Lodge</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Khumbu</span>
+                                <span><i class="fa-solid fa-mountain"></i> 5,364 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Everest Base Lodge', 'Khumbu', '5,364 m', 'A welcoming lodge serving trekkers preparing for demanding high-altitude routes.', 'Hiking · Trekking · Overnight Rest', ['Beds', 'Dining', 'Heating', 'Wi-Fi'], './img shlter/Everest Base Lodge.jpg', 'PERMANENT', 'fa-solid fa-house')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 29. Portable -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="portable">
+                    <article class="shelter-card" data-type="portable">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Ridge Explorer Camp.jpg" alt="Ridge Explorer Camp" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-tent"></i> PORTABLE</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Ridge Explorer Camp</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Nepal</span>
+                                <span><i class="fa-solid fa-mountain"></i> 4,400 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Ridge Explorer Camp', 'Nepal', '4,400 m', 'A lightweight mountain camp designed for remote high-altitude routes.', 'Hiking · Trekking · Overnight Rest', ['Portable', 'Compact', 'Waterproof', 'Storage'], './img shlter/Ridge Explorer Camp.jpg', 'PORTABLE', 'fa-solid fa-tent')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 30. Emergency -->
+                <div class="col-lg-4 col-md-6 filter-item" data-category="emergency">
+                    <article class="shelter-card" data-type="emergency">
+                        <div class="shelter-image">
+                            <img src="./img shlter/Summit Emergency Hut.jpg" alt="Summit Emergency Hut" loading="lazy">
+                            <span class="shelter-badge"><i class="fa-solid fa-triangle-exclamation"></i>
+                                EMERGENCY</span>
+                        </div>
+                        <div class="shelter-content">
+                            <h3>Summit Emergency Hut</h3>
+                            <div class="shelter-meta">
+                                <span><i class="fa-solid fa-location-dot"></i> Nepal</span>
+                                <span><i class="fa-solid fa-mountain"></i> 5,400 m</span>
+                            </div>
+                            <p class="best-for"><b>Best for:</b> Hiking · Trekking · Overnight Rest</p>
+                            <div class="card-actions">
+                                <button class="details-btn"
+                                    onclick="openModal('Summit Emergency Hut', 'Nepal', '5,400 m', 'A high-altitude emergency hut providing vital protection near summit routes.', 'Hiking · Trekking · Overnight Rest', ['Oxygen', 'Radio', 'First Aid', 'Food'], './img shlter/Summit Emergency Hut.jpg', 'EMERGENCY', 'fa-solid fa-triangle-exclamation')">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></button>
+                                <a href="contact.html" class="book-btn">Book Shelter <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SHELTER MODAL -->
+    <div class="shelter-modal" id="shelterModal">
+        <div class="modal-overlay"></div>
+        <div class="shelter-modal-box">
+            <button class="modal-close" id="modalClose" type="button">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-img">
+                <img id="modalImage" src="" alt="Shelter">
+                <span id="modalBadge" class="shelter-badge"></span>
+            </div>
+            <div class="modal-info">
+                <span class="modal-label">SHELTER DETAILS</span>
+                <h2 id="modalTitle"></h2>
+                <div class="modal-meta">
+                    <span><i class="fa-solid fa-location-dot"></i> <b id="modalLocation"></b></span>
+                    <span><i class="fa-solid fa-mountain"></i> <b id="modalAltitude"></b></span>
+                </div>
+                <p id="modalDescription"></p>
+                <div class="modal-best">
+                    <span>BEST FOR</span>
+                    <p id="modalBestFor"></p>
+                </div>
+                <div class="modal-features">
+                    <span>FEATURES</span>
+                    <div id="modalFeatures"></div>
+                </div>
+                <a href="contact.html" class="modal-book-btn">Book This Shelter <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOUNTAIN SAFETY SECTION -->
+    <section class="safety-section">
+        <div class="safety-header">
+            <span class="safety-label">
+                <i class="fa-solid fa-shield-heart"></i>
+                MOUNTAIN SAFETY
+            </span>
+
+            <h2>
+                Stay Safe,
+                <span>Stay Prepared</span>
+            </h2>
+
+            <p>
+                Simple precautions can make every mountain journey
+                safer, smarter and more enjoyable.
+            </p>
+        </div>
+        <div class="container">
+
+            <div class="safety-grid">
+
+                <!-- 01 -->
+                <div class="safety-card">
+
+                    <span class="safety-number">01</span>
+
+                    <div class="safety-icon">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                    </div>
+
+                    <div class="safety-content">
+
+                        <h3>Read the Weather</h3>
+
+                        <p>
+                            Mountain weather can change quickly.
+                            Always check the forecast before heading out.
+                        </p>
+
+                    </div>
+
+                    <div class="safety-line"></div>
+
+                </div>
+
+                <!-- 02 -->
+                <div class="safety-card">
+
+                    <span class="safety-number">02</span>
+
+                    <div class="safety-icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+
+                    <div class="safety-content">
+
+                        <h3>Know the Capacity</h3>
+
+                        <p>
+                            Make sure your chosen shelter has enough
+                            space before starting your journey.
+                        </p>
+
+                    </div>
+
+                    <div class="safety-line"></div>
+
+                </div>
+
+                <!-- 03 -->
+                <div class="safety-card">
+
+                    <span class="safety-number">03</span>
+
+                    <div class="safety-icon">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+
+                    <div class="safety-content">
+
+                        <h3>Carry Emergency Gear</h3>
+
+                        <p>
+                            Keep first-aid, water, flashlight and
+                            essential emergency supplies with you.
+                        </p>
+
+                    </div>
+
+                    <div class="safety-line"></div>
+
+                </div>
+
+                <!-- 04 -->
+                <div class="safety-card">
+
+                    <span class="safety-number">04</span>
+
+                    <div class="safety-icon">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+
+                    <div class="safety-content">
+
+                        <h3>Arrive Before Dark</h3>
+
+                        <p>
+                            Reach your shelter before nightfall to avoid
+                            navigating difficult terrain in darkness.
+                        </p>
+
+                    </div>
+
+                    <div class="safety-line"></div>
+
+                </div>
+
+                <!-- 05 -->
+                <div class="safety-card">
+
+                    <span class="safety-number">05</span>
+
+                    <div class="safety-icon">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                    </div>
+
+                    <div class="safety-content">
+
+                        <h3>Share Your Route</h3>
+
+                        <p>
+                            Let someone you trust know your route,
+                            destination and expected arrival time.
+                        </p>
+
+                    </div>
+
+                    <div class="safety-line"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SHELTER MAP SECTION -->
+    <section class="shelter-map-section">
+
+        <div class="container">
+
+            <!-- HEADING -->
+
+            <div class="map-section-heading">
+
+                <span class="map-eyebrow">
+                    <i class="fa-solid fa-compass"></i>
+                    EXPLORE THE PEAKS
+                </span>
+
+                <h2>
+                    Find Your
+                    <span>Shelter</span>
+                </h2>
+
+                <p>
+                    Explore mountain shelter locations and discover
+                    safe resting points across some of the world's
+                    most beautiful mountain regions.
+                </p>
+
+            </div>
+
+            <!-- MAP WRAPPER -->
+            <div class="real-map-wrapper">
+
+                <div id="shelterMap"></div>
+
+                <!-- MAP TOP INFO -->
+                <div class="map-glass-title">
+
+                    <i class="fa-solid fa-mountain"></i>
+
+                    <div>
+                        <strong>ALPINE AURA</strong>
+                        <small>Mountain Shelter Network</small>
+                    </div>
+
+                </div>
+
+                <!-- MAP LEGEND -->
+                <div class="map-legend-box">
+
+                    <div class="legend-item">
+
+                        <span class="legend-circle permanent"></span>
+
+                        <span>Permanent</span>
+
+                    </div>
+
+                    <div class="legend-item">
+
+                        <span class="legend-circle portable"></span>
+
+                        <span>Portable</span>
+
+                    </div>
+
+                    <div class="legend-item">
+
+                        <span class="legend-circle emergency"></span>
+
+                        <span>Emergency</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FINAL SAFETY CTA -->
+    <section class="final-safety-section">
+
+        <div class="container">
+
+            <div class="final-safety-cta">
+
+                <!-- LEFT CONTENT -->
+
+                <div class="final-safety-content">
+
+                    <span class="final-safety-eyebrow">
+
+                        <i class="fa-solid fa-shield-heart"></i>
+
+                        MOUNTAIN SAFETY
+
+                    </span>
+
+                    <h2>
+                        Your Safety,
+                        <span>Our Priority</span>
+                    </h2>
+
+                    <p class="final-safety-description">
+
+                        From peaceful mountain nights to unexpected
+                        weather, choose the right shelter and stay
+                        prepared for every journey.
+
+                    </p>
+
+                    <div class="final-safety-buttons">
+
+                        <a href="#featuredShelters" class="final-safety-btn final-primary-btn">
+
+                            Explore Shelters
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                        <a href="contact.html" class="final-safety-btn final-secondary-btn">
+
+                            Book a Shelter
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                        </a>
+
+                    </div>
+
+                    <!-- STATS -->
+                    <div class="final-safety-stats">
+
+                        <div class="final-safety-stat">
+
+                            <strong>30+</strong>
+
+                            <span>Shelter Options</span>
+
+                        </div>
+
+                        <div class="final-stat-divider"></div>
+
+                        <div class="final-safety-stat">
+
+                            <strong>3</strong>
+
+                            <span>Shelter Types</span>
+
+                        </div>
+
+                        <div class="final-stat-divider"></div>
+
+                        <div class="final-safety-stat">
+
+                            <strong>24/7</strong>
+
+                            <span>Safety Focus</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="final-safety-visual">
+
+                    <img src="./img shlter/final (2).png" alt="Mountain shelter at night">
+                    <div class="final-safety-overlay"></div>
+
+                    <!-- GLASS CARD -->
+                    <div class="final-safety-glass">
+
+                        <div class="final-safety-icon">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Stay Prepared
+                            </strong>
+
+                            <span>
+                                Stay Protected
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- LOCATION -->
+                    <div class="final-safety-location">
+
+                        <i class="fa-solid fa-mountain"></i>
+
+                        ALPINE AURA
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="aura-footer">
+        <div class="footer-aura"></div>
+        <div class="mountain-line">
+            <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+                <path d="
+                M0 150
+                L120 95
+                L190 125
+                L290 45
+                L370 110
+                L470 65
+                L550 125
+                L660 35
+                L760 115
+                L850 70
+                L940 125
+                L1050 50
+                L1140 105
+                L1240 35
+                L1320 100
+                L1440 55
+                L1440 180
+                L0 180
+                Z
+            " />
+            </svg>
+        </div>
+        <div class="footer-inner">
+            <div class="footer-intro">
+                <div class="footer-logo">
+                    <img src="./img/Gemini_Generated_Image_rip6w4rip6w4rip6.png" alt="Alpine Aura">
+                    <span>ALPINE AURA</span>
+                </div>
+                <p>
+                    Explore beyond the ordinary.
+                    Discover mountains, stories and
+                    unforgettable adventures.
+                </p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Ladakh%2C%20India" target="_blank"
+                    rel="noopener noreferrer" class="map-btn">
+                    <span>⌖</span>
+                    Explore on Map
+                    <span class="arrow">↗</span>
+                </a>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-group">
+                    <h4>EXPLORE</h4>
+                    <a href="history.html">
+                        Mountains
+                    </a>
+                    <a href="history.html">
+                        History
+                    </a>
+                    <a href="activities.html">
+                        Activities
+                    </a>
+                    <a href="gallery.html">
+                        Gallery
+                    </a>
+                </div>
+                <div class="footer-group">
+                    <h4>ALPINE AURA</h4>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                    <a href="index.html#reviews">
+                        Reviews
+                    </a>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                    <a href="travel-guide.html">
+                        Travel Guide
+                    </a>
+                </div>
+            </div>
+            <div class="footer-stats">
+                <div class="stat-heading">
+                    <span class="pulse"></span>
+                    PEOPLE WHO EXPLORED
+                </div>
+                <div class="visitor-number" id="visitorCount">
+                    12,847
+                </div>
+                <p>
+                    explorers have visited
+                    Alpine Aura
+                </p>
+                <div class="stat-line"></div>
+                <span class="journey-text">
+                    YOUR JOURNEY STARTS HERE
+                </span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>
+                © 2026 Alpine Aura. All Rights Reserved.
+            </span>
+            <div class="socials">
+                <a href="#" aria-label="Instagram">
+                    ig
+                </a>
+                <a href="#" aria-label="Facebook">
+                    f
+                </a>
+                <a href="#" aria-label="YouTube">
+                    yt
+                </a>
+            </div>
+            <span class="footer-slogan">
+                BORN TO EXPLORE
+            </span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

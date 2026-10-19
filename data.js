@@ -1,0 +1,327 @@
+/* Embedded fallback copy of data/hazards.json.
+   Used automatically when the page is opened directly (file://)
+   and fetch() of the JSON file is blocked by the browser.
+   Keep this in sync with data/hazards.json, or run the site
+   through a local server so script.js reads the JSON live. */
+
+window.HAZARD_FALLBACK_DATA = [
+  {
+    "id": "h01",
+    "name": "Rockfall",
+    "category": "Terrain",
+    "risk": "High",
+    "icon": "rock",
+    "description": "Loose rock dislodged by freeze-thaw cycles, wildlife, or other climbers, falling from above onto a route.",
+    "warningSigns": "Fresh scree on the trail, sounds of cracking or clattering above, sun hitting a north-facing gully after a cold night.",
+    "prevention": "Climb during cold, stable hours before thaw sets in; wear a helmet at all times on exposed terrain; avoid stopping directly beneath gullies or chutes.",
+    "action": "Shout 'ROCK!' immediately to warn others, move sideways out of the fall line rather than downhill, and shelter behind a rib of rock if you can't clear the area."
+  },
+  {
+    "id": "h02",
+    "name": "Avalanches",
+    "category": "Terrain",
+    "risk": "Extreme",
+    "icon": "avalanche",
+    "description": "A rapid slide of snow, ice, and debris down a slope, capable of burying or sweeping away anything in its path.",
+    "warningSigns": "Recent heavy snowfall, whumpfing sounds underfoot, shooting cracks across the snow, rising temperatures after a storm.",
+    "prevention": "Check the local avalanche bulletin before setting out, choose low-angle terrain on high-risk days, carry a transceiver, probe, and shovel, and travel one at a time across suspect slopes.",
+    "action": "Try to escape sideways off the slab, drop gear, and fight to stay near the surface. If buried, create an air pocket in front of your face and stay calm to conserve oxygen."
+  },
+  {
+    "id": "h03",
+    "name": "Crevasses",
+    "category": "Terrain",
+    "risk": "Extreme",
+    "icon": "crevasse",
+    "description": "Deep fractures in glacial ice, often hidden beneath a thin bridge of snow, that can open without warning underfoot.",
+    "warningSigns": "Sagging or discolored snow patches, hollow sounds when probed, a visible dip or seam in the glacier surface.",
+    "prevention": "Rope up in a team when crossing glaciated terrain, probe suspect snow bridges ahead of each step, and travel early before the sun softens snow bridges.",
+    "action": "If a partner falls in, arrest the fall immediately, build an anchor, and begin a crevasse-rescue haul system; do not approach the lip without being anchored yourself."
+  },
+  {
+    "id": "h04",
+    "name": "Icefall",
+    "category": "Terrain",
+    "risk": "Extreme",
+    "icon": "icefall",
+    "description": "Collapsing towers of glacial ice (seracs) that can shear off without warning, especially in active icefalls.",
+    "warningSigns": "Audible cracking within the ice, visibly leaning or overhanging seracs, recent debris fields below the icefall.",
+    "prevention": "Cross known icefalls at first light when the ice is most stable, minimize time spent lingering underneath seracs, and follow a route set by experienced guides where possible.",
+    "action": "Move quickly and directly through exposed zones rather than stopping to rest, and keep well clear of overhanging ice even if it adds distance to the route."
+  },
+  {
+    "id": "h05",
+    "name": "Steep & Slippery Terrain",
+    "category": "Terrain",
+    "risk": "Moderate",
+    "icon": "slope",
+    "description": "Wet rock, verglas, or scree-covered slopes that dramatically reduce traction on otherwise moderate ground.",
+    "warningSigns": "A glassy sheen on rock, loose gravel underfoot, damp sections after rain or overnight condensation.",
+    "prevention": "Use trekking poles or an ice axe for extra points of contact, choose footwear with aggressive tread, and test each foot placement before committing weight.",
+    "action": "Slow your pace, widen your stance, and if a slip begins, self-arrest or sit down immediately to stop a slide before it accelerates."
+  },
+  {
+    "id": "h06",
+    "name": "Snowstorms & Blizzards",
+    "category": "Weather",
+    "risk": "High",
+    "icon": "snowstorm",
+    "description": "Sustained heavy snowfall combined with strong wind, drastically reducing visibility and burying route markers.",
+    "warningSigns": "A rapidly darkening sky, a sudden temperature drop, distant cloud banks moving in faster than expected.",
+    "prevention": "Check multiple forecast sources before departure, build in a weather buffer day, and turn back early if a storm front is closing in.",
+    "action": "Seek or build shelter immediately, mark your position, stay together as a group, and wait out the worst of the storm rather than pushing through low visibility."
+  },
+  {
+    "id": "h07",
+    "name": "Lightning & Thunderstorms",
+    "category": "Weather",
+    "risk": "Extreme",
+    "icon": "lightning",
+    "description": "Electrical storms are especially dangerous on exposed ridgelines and summits, where climbers become the highest point around.",
+    "warningSigns": "Building afternoon cumulus clouds, a metallic taste or buzzing on metal gear, hair standing on end.",
+    "prevention": "Start early and aim to be off exposed ridges and summits before early-afternoon storms typically build, and check the forecast for storm activity.",
+    "action": "Descend from exposed terrain immediately, discard metal gear away from your body, crouch on an insulating pad with feet together, and spread the group out."
+  },
+  {
+    "id": "h08",
+    "name": "Extreme Cold & Wind Chill",
+    "category": "Weather",
+    "risk": "High",
+    "icon": "cold",
+    "description": "Combined low temperature and wind speed that can drop effective temperatures far below the air reading, accelerating heat loss.",
+    "warningSigns": "Numbness in fingers or toes, uncontrollable shivering, exposed skin stinging within minutes.",
+    "prevention": "Layer clothing to manage moisture and insulation, cover all exposed skin in windy conditions, and monitor teammates for early cold-injury signs.",
+    "action": "Add insulating layers immediately, shelter from wind, warm affected extremities gradually, and turn around if cold injury symptoms appear."
+  },
+  {
+    "id": "h09",
+    "name": "Fog & Low Visibility",
+    "category": "Weather",
+    "risk": "Moderate",
+    "icon": "fog",
+    "description": "Cloud or mist enveloping a route, hiding terrain features, cliff edges, and navigation landmarks.",
+    "warningSigns": "Cloud rapidly rising up a valley, a sudden drop in visible landmarks, moisture beading on gear.",
+    "prevention": "Carry a map, compass, and GPS device and know how to use them without visual references; note key bearings before visibility drops.",
+    "action": "Stop and regroup rather than pressing on blind, navigate by compass bearing and pacing, and wait in a safe spot if visibility is near zero."
+  },
+  {
+    "id": "h10",
+    "name": "Sudden Weather Changes",
+    "category": "Weather",
+    "risk": "Moderate",
+    "icon": "weather-change",
+    "description": "Mountain weather can shift from clear to severe within an hour as fronts move quickly over exposed terrain.",
+    "warningSigns": "Rapidly building cloud, a sudden wind shift, a noticeable pressure or temperature change.",
+    "prevention": "Build turnaround times into every plan and stick to them regardless of summit ambitions, and monitor sky conditions continuously.",
+    "action": "Treat any rapid change as a signal to retreat toward known shelter or lower ground rather than waiting to see if it passes."
+  },
+  {
+    "id": "h11",
+    "name": "Acute Mountain Sickness (AMS)",
+    "category": "Altitude",
+    "risk": "Moderate",
+    "icon": "altitude",
+    "description": "A common reaction to rapid ascent above roughly 2,500 m, caused by the body struggling to adapt to reduced oxygen.",
+    "warningSigns": "Headache, nausea, dizziness, fatigue, and poor appetite that worsen rather than improve with rest.",
+    "prevention": "Ascend gradually, follow a 'climb high, sleep low' pattern, stay hydrated, and avoid alcohol at altitude.",
+    "action": "Stop ascending and rest at the same altitude until symptoms clear; descend if symptoms worsen or fail to improve within a day."
+  },
+  {
+    "id": "h12",
+    "name": "HACE (Cerebral Edema)",
+    "category": "Altitude",
+    "risk": "Extreme",
+    "icon": "hace",
+    "description": "A life-threatening swelling of the brain caused by severe altitude illness, which can progress within hours.",
+    "warningSigns": "Confusion, loss of coordination or balance, severe headache, hallucinations, altered consciousness.",
+    "prevention": "Never ignore worsening AMS symptoms, ascend gradually, and carry emergency descent and evacuation plans for high-altitude routes.",
+    "action": "Descend immediately regardless of time of day, administer supplemental oxygen or medication if available, and evacuate to lower altitude as fast as possible."
+  },
+  {
+    "id": "h13",
+    "name": "HAPE (Pulmonary Edema)",
+    "category": "Altitude",
+    "risk": "Extreme",
+    "icon": "hape",
+    "description": "A dangerous buildup of fluid in the lungs at high altitude that can be fatal without rapid descent.",
+    "warningSigns": "Persistent cough, extreme fatigue, breathlessness at rest, a gurgling or crackling sound in the chest.",
+    "prevention": "Acclimatize slowly, avoid overexertion during ascent, and monitor blood-oxygen levels where equipment is available.",
+    "action": "Descend without delay, keep the person warm and as calm as possible, and use supplemental oxygen or a portable hyperbaric bag if available."
+  },
+  {
+    "id": "h14",
+    "name": "Hypoxia & Dehydration",
+    "category": "Altitude",
+    "risk": "Moderate",
+    "icon": "hypoxia",
+    "description": "Reduced oxygen availability combined with fluid loss from dry mountain air and exertion, impairing judgement and stamina.",
+    "warningSigns": "Rapid breathing, poor decision-making, dark urine, dry mouth, persistent thirst.",
+    "prevention": "Drink water on a schedule rather than waiting for thirst, pace exertion to breathing capacity, and rest at regular intervals.",
+    "action": "Slow down, rehydrate steadily, and rest until breathing and clarity of thought return to normal before continuing."
+  },
+  {
+    "id": "h15",
+    "name": "Frostbite",
+    "category": "Environmental",
+    "risk": "High",
+    "icon": "frostbite",
+    "description": "Freezing of skin and underlying tissue, most common on fingers, toes, ears, and the nose in extreme cold.",
+    "warningSigns": "Skin turning white, waxy, or grey, numbness, a prickling or aching sensation before it fades.",
+    "prevention": "Keep extremities dry and insulated, avoid tight boots or gloves that restrict circulation, and check exposed skin regularly with a partner.",
+    "action": "Rewarm gradually with body heat, never rub the affected area, avoid refreezing once warmed, and seek medical care as soon as possible."
+  },
+  {
+    "id": "h16",
+    "name": "Hypothermia",
+    "category": "Environmental",
+    "risk": "Extreme",
+    "icon": "hypothermia",
+    "description": "A dangerous drop in core body temperature caused by prolonged cold exposure, often worsened by wind and wet clothing.",
+    "warningSigns": "Uncontrollable shivering that later stops, slurred speech, confusion, fumbling hands, drowsiness.",
+    "prevention": "Stay dry, layer for changing conditions, eat and hydrate regularly, and change out of wet clothing immediately when possible.",
+    "action": "Insulate from the ground and wind, remove wet layers, share body heat, offer warm sweet drinks if the person is alert, and evacuate urgently."
+  },
+  {
+    "id": "h17",
+    "name": "Snow Blindness",
+    "category": "Environmental",
+    "risk": "Moderate",
+    "icon": "snowblind",
+    "description": "A painful, temporary sunburn of the eye's surface caused by UV reflecting off snow and ice.",
+    "warningSigns": "Gritty or watery eyes, sensitivity to light, a delayed onset of pain several hours after exposure.",
+    "prevention": "Wear certified glacier glasses or goggles with UV protection at all times on snow, even under overcast skies.",
+    "action": "Rest the eyes in a dark, shaded space, apply a cool damp cloth, and avoid further UV exposure until symptoms fully resolve."
+  },
+  {
+    "id": "h18",
+    "name": "Sunburn & UV Exposure",
+    "category": "Environmental",
+    "risk": "Low",
+    "icon": "sunburn",
+    "description": "Intensified UV radiation at altitude and reflected off snow, causing rapid skin damage even in cold conditions.",
+    "warningSigns": "Reddening or tightness of skin, a warm sensation on exposed areas, faster burning than expected at lower elevations.",
+    "prevention": "Apply high-SPF sunscreen to all exposed skin, reapply regularly, and cover the neck, ears, and lips.",
+    "action": "Move into shade, cover the burned area, cool with a damp cloth, and hydrate to support skin recovery."
+  },
+  {
+    "id": "h19",
+    "name": "Falls",
+    "category": "Technical",
+    "risk": "Extreme",
+    "icon": "fall",
+    "description": "Loss of contact with the rock, ice, or slope, ranging from a short slip to a long uncontrolled fall.",
+    "warningSigns": "Fatigue affecting footwork, a poorly protected runout, unstable or wet holds.",
+    "prevention": "Place protection frequently on lead, maintain three points of contact, and turn back when fatigue starts to affect technique.",
+    "action": "Attempt to self-arrest or control the fall direction, protect the head, and once stopped, check for injuries before continuing."
+  },
+  {
+    "id": "h20",
+    "name": "Rope & Equipment Failure",
+    "category": "Technical",
+    "risk": "High",
+    "icon": "rope",
+    "description": "Failure of climbing hardware caused by wear, damage, incorrect use, or exceeding a component's rated limits.",
+    "warningSigns": "Fraying or fuzzing on rope sheath, corrosion or cracks on metal gear, a harness webbing that feels stiff or discolored.",
+    "prevention": "Inspect all gear before every outing, retire equipment on schedule or after a hard fall, and never exceed manufacturer load ratings.",
+    "action": "Stop using the item immediately, switch to backup gear if available, and retreat to reassess rather than continuing on compromised equipment."
+  },
+  {
+    "id": "h21",
+    "name": "Poor Anchoring",
+    "category": "Technical",
+    "risk": "High",
+    "icon": "anchor",
+    "description": "An anchor system that fails to distribute load safely, whether in rock, ice, or snow.",
+    "warningSigns": "Placements that shift under light tension, a single point of protection with no backup, cracked or hollow-sounding rock.",
+    "prevention": "Build redundant, equalized anchors from multiple solid placements, and test each piece before weighting the system.",
+    "action": "Back up questionable anchors immediately with additional placements and communicate clearly with your partner before any load is applied."
+  },
+  {
+    "id": "h22",
+    "name": "Incorrect Technique",
+    "category": "Technical",
+    "risk": "Moderate",
+    "icon": "technique",
+    "description": "Improper belaying, rappelling, or movement technique that increases the chance of a preventable accident.",
+    "warningSigns": "Inconsistent belay device handling, an unbacked rappel, hesitant or off-balance movement on terrain.",
+    "prevention": "Practice core skills in controlled settings before applying them on route, and seek instruction from a qualified guide.",
+    "action": "Pause and correct the technique on the spot, use a backup (such as an autoblock) whenever unsure, and ask a partner to double-check systems."
+  },
+  {
+    "id": "h23",
+    "name": "Wild Animal Encounters",
+    "category": "Wildlife",
+    "risk": "Low",
+    "icon": "wildlife",
+    "description": "Encounters with mountain wildlife such as goats, bears, or territorial birds, which are usually avoidable with awareness.",
+    "warningSigns": "Fresh tracks or scat on the trail, animal sounds nearby, a den or nest close to the route.",
+    "prevention": "Store food securely away from camp, make noise while moving through dense terrain, and keep a respectful distance from any wildlife.",
+    "action": "Back away slowly without turning your back, avoid sudden movement, and give the animal a clear path to retreat."
+  },
+  {
+    "id": "h24",
+    "name": "Insects & Poisonous Plants",
+    "category": "Wildlife",
+    "risk": "Low",
+    "icon": "insect",
+    "description": "Stinging insects and irritant or toxic plants encountered on lower-elevation approach trails.",
+    "warningSigns": "Visible nests near the trail, unfamiliar berries or leaves, an itching or burning sensation after brushing past foliage.",
+    "prevention": "Stay on established trails, wear long sleeves through brushy sections, and learn to identify common local hazards before the trip.",
+    "action": "Move away calmly from insect activity, wash any skin contact with irritant plants promptly, and monitor for allergic reactions."
+  },
+  {
+    "id": "h25",
+    "name": "Rock & Earth Movement",
+    "category": "Wildlife",
+    "risk": "Moderate",
+    "icon": "earth",
+    "description": "Natural shifting of loose ground, unstable moraine, or minor seismic activity in mountainous regions.",
+    "warningSigns": "Loose, unconsolidated ground underfoot, small trickles of gravel with no obvious cause, distant rumbling.",
+    "prevention": "Avoid camping directly below unstable slopes or moraine walls, and move efficiently through known unstable zones.",
+    "action": "Move away from the unstable area toward solid ground, and avoid stopping on loose slopes even briefly."
+  },
+  {
+    "id": "h26",
+    "name": "Lack of Experience",
+    "category": "Human",
+    "risk": "High",
+    "icon": "experience",
+    "description": "Attempting terrain or conditions beyond a climber's trained skill level, one of the leading causes of mountain incidents.",
+    "warningSigns": "Hesitation on basic movements, unfamiliarity with the team's gear, discomfort openly admitted by a team member.",
+    "prevention": "Build skills progressively on easier routes, climb with a qualified guide when attempting new terrain, and get honest about ability before committing.",
+    "action": "Turn back or rope up for extra security when terrain exceeds the group's demonstrated experience, rather than pushing through it."
+  },
+  {
+    "id": "h27",
+    "name": "Poor Preparation & Getting Lost",
+    "category": "Human",
+    "risk": "Moderate",
+    "icon": "lost",
+    "description": "Inadequate route research, navigation tools, or planning that leads a party off course or short on supplies.",
+    "warningSigns": "Uncertainty about landmarks, conflicting map and terrain features, dwindling daylight with distance still to cover.",
+    "prevention": "Study the route in detail beforehand, carry redundant navigation tools, and share the itinerary with someone outside the group.",
+    "action": "Stop moving once uncertain, retrace known steps if possible, use navigation tools to reorient, and shelter in place if daylight is running out."
+  },
+  {
+    "id": "h28",
+    "name": "Fatigue & Panic",
+    "category": "Human",
+    "risk": "Moderate",
+    "icon": "fatigue",
+    "description": "Physical exhaustion or psychological panic that impairs decision-making and physical coordination on route.",
+    "warningSigns": "Slower reaction times, irritability, shaking hands, racing thoughts or an inability to focus on the next move.",
+    "prevention": "Pace effort to match the whole day's demands, eat and rest at regular intervals, and rehearse emergency scenarios in advance to reduce panic response.",
+    "action": "Stop, breathe, and reassess before making further decisions; lean on a calmer partner and simplify the next step rather than the whole remaining route."
+  },
+  {
+    "id": "h29",
+    "name": "Climbing Alone",
+    "category": "Human",
+    "risk": "High",
+    "icon": "solo",
+    "description": "Solo travel in remote or technical terrain removes the safety margin a partner or team provides in an emergency.",
+    "warningSigns": "No planned check-in with anyone outside the mountain, no backup plan if an injury occurs, remote terrain with no rescue nearby.",
+    "prevention": "Climb with a partner on technical or remote routes, and if soloing is unavoidable, leave a detailed plan and check-in time with someone reliable.",
+    "action": "Carry emergency communication and first aid at all times, move conservatively, and prioritize retreat over any technical or timing objective."
+  }
+];

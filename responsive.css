@@ -1,0 +1,969 @@
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  max-width: 100vw;
+}
+
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Any element that still uses inline background sizing (activity-bg,
+   hero) is excluded from height:auto since it's a positioned layer,
+   not a normal <img>. */
+.activity-bg {
+  height: 100% !important;
+}
+
+.container,
+.container-fluid {
+  max-width: 100%;
+}
+
+/* Bootstrap gutters can push content edge-to-edge on very small
+   screens; give a small safety floor. */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* =====================================================================
+   1. NAVBAR (.floating-nav-container, .master-pill-navbar,
+      .inner-links-pill, .navbar-brand, .brand-local-img,
+      .btn-gradient-action)
+   ===================================================================== */
+.master-pill-navbar .container-fluid {
+  gap: 8px;
+}
+
+.navbar-brand {
+  font-size: clamp(1rem, 2.6vw, 1.3rem);
+}
+
+.brand-local-img {
+  width: clamp(30px, 5vw, 38px);
+  height: clamp(30px, 5vw, 38px);
+}
+
+@media (max-width: 1200px) {
+  .inner-links-pill .nav-item .nav-link {
+    padding: 8px 10px !important;
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 991px) {
+  /* style.css already stacks the pill nav here; just tighten fit */
+  .floating-nav-container {
+    padding: 8px 10px;
+  }
+  .master-pill-navbar .container-fluid {
+    flex-wrap: nowrap;
+  }
+  .navbar-toggler {
+    padding: 4px 8px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand span {
+    font-size: 0.95rem;
+  }
+  .navbar-brand {
+    gap: 6px !important;
+  }
+  .master-pill-navbar {
+    padding: 8px 12px;
+  }
+  .inner-links-pill {
+    padding: 10px;
+  }
+  .inner-links-pill .nav-item .nav-link {
+    font-size: 0.85rem;
+    padding: 10px 12px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-brand span {
+    font-size: 0.85rem;
+  }
+  .brand-local-img {
+    width: 28px;
+    height: 28px;
+  }
+  .navbar-toggler .fa-bars-staggered {
+    font-size: 1.3rem !important;
+  }
+}
+
+/* =====================================================================
+   2. HERO SECTION (home) — .hero-section, .badge-custom, .lead
+   ===================================================================== */
+.hero-section {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.hero-section h1 {
+  font-size: clamp(1.9rem, 5.2vw, 3.8rem) !important;
+  line-height: 1.15;
+}
+
+.hero-section .lead {
+  font-size: clamp(0.95rem, 2vw, 1.25rem);
+  max-width: min(700px, 92vw) !important;
+}
+
+.hero-section .badge-custom {
+  font-size: clamp(0.72rem, 1.6vw, 0.85rem);
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  .hero-section .d-flex.gap-3 {
+    gap: 12px !important;
+  }
+  .hero-section .btn-gradient-action,
+  .hero-section .btn-outline-custom {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-section {
+    padding-top: 110px;
+  }
+}
+
+/* =====================================================================
+   3. SECTION HEADINGS (shared pattern across sections)
+   Bootstrap's .display-5 / .display-3 gets fluid instead of fixed.
+   ===================================================================== */
+.display-3 {
+  font-size: clamp(1.9rem, 5.2vw, 3.8rem) !important;
+}
+
+.display-5 {
+  font-size: clamp(1.6rem, 4vw, 3rem) !important;
+}
+
+/* =====================================================================
+   4. ABOUT BENTO SECTION — .bento-card family
+   ===================================================================== */
+.about-bento-section {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (max-width: 992px) {
+  .bento-main-story {
+    min-height: unset;
+    padding: 32px !important;
+  }
+  .bento-image-card {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bento-main-story h3.fs-2 {
+    font-size: clamp(1.3rem, 4vw, 1.8rem) !important;
+  }
+  .bento-main-story .d-flex.align-items-center.gap-4 {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 14px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .bento-card.p-4,
+  .bento-card.p-4.p-md-5 {
+    padding: 24px !important;
+  }
+  .bento-icon-box {
+    width: 44px;
+    height: 44px;
+    font-size: 1.05rem;
+  }
+  .bento-image-card {
+    min-height: 220px;
+  }
+  .bento-floating-tag {
+    padding: 8px 14px;
+    left: 14px;
+    bottom: 14px;
+  }
+}
+
+/* =====================================================================
+   5. FEATURED ACTIVITY CARDS
+   These use an inline style="min-height:400px" in the HTML, which
+   beats an external stylesheet by specificity — !important is
+   required here purely to make the card height responsive, not to
+   change its look.
+   ===================================================================== */
+@media (max-width: 768px) {
+  .activity-card {
+    min-height: 340px !important;
+  }
+  .activity-card .fs-3 {
+    font-size: clamp(1.2rem, 4.5vw, 1.5rem) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .activity-card {
+    min-height: 300px !important;
+  }
+  .activity-card .card-body {
+    padding: 22px !important;
+  }
+}
+
+/* =====================================================================
+   6. FAQ SECTION — .faq-card-item
+   ===================================================================== */
+@media (max-width: 768px) {
+  .faq-card-item {
+    padding: 20px !important;
+  }
+  .faq-card-item h3.h6 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-card-item .d-flex.justify-content-between {
+    gap: 10px;
+  }
+  .faq-card-item h3.h6 {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+}
+
+/* =====================================================================
+   7. HISTORY / MOUNTAIN SECTION — fills the gap between the site's
+      own 991px rule and full desktop, and improves very small phones.
+   ===================================================================== */
+@media (max-width: 1200px) and (min-width: 992px) {
+  .mountain-stage {
+    width: 820px;
+  }
+  .mountain-image-wrapper {
+    width: 370px;
+    height: 265px;
+  }
+  .history-timeline {
+    width: 800px;
+  }
+}
+
+@media (max-width: 350px) {
+  .mountain-content h1 {
+    font-size: 22px;
+  }
+  .big-number {
+    font-size: 150px;
+  }
+  .mountain-image-wrapper {
+    height: 190px;
+  }
+}
+
+/* =====================================================================
+   8. REVIEWS — fills gap between default and site's own 991px rule
+   ===================================================================== */
+@media (max-width: 1200px) and (min-width: 992px) {
+  .review-card {
+    flex: 0 0 540px;
+    width: 540px;
+  }
+}
+
+/* =====================================================================
+   9. CTA EXPEDITION BANNER — fluid type on top of existing 768 rule
+   ===================================================================== */
+.cta-content h2 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+.cta-content p {
+  font-size: clamp(0.85rem, 1.8vw, 1rem);
+}
+
+@media (max-width: 576px) {
+  .cta-glass-container {
+    padding: 28px 18px;
+  }
+  .btn-primary-glow,
+  .btn-secondary-glass {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* =====================================================================
+   10. FOOTER — fills gap between desktop 3-col and site's own 900px
+   ===================================================================== */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .footer-inner {
+    gap: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-nav {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+  .visitor-number {
+    font-size: 32px;
+  }
+  .footer-logo span {
+    font-size: 17px;
+  }
+  .footer-bottom {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer-nav {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* =====================================================================
+   11. SHELTER PAGE — PREMIUM HERO
+   ===================================================================== */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .shelter-premium-hero {
+    width: 92%;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-content h1 {
+    font-size: 40px !important;
+  }
+  .hero-content p {
+    font-size: 12px !important;
+  }
+}
+
+/* =====================================================================
+   12. SHELTER INTRO CARDS
+   ===================================================================== */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .intro-cards {
+    gap: 18px;
+  }
+}
+
+/* =====================================================================
+   13. FEATURED SHELTERS — filters, cards, detail modal
+   ===================================================================== */
+.shelter-filters {
+  gap: 8px;
+}
+
+@media (max-width: 991px) {
+  .shelter-filters {
+    justify-content: flex-start !important;
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+  .shelter-filters::-webkit-scrollbar {
+    display: none;
+  }
+  .filter-btn {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+  .shelter-modal-box {
+    grid-template-columns: 1fr;
+    max-height: 92vh;
+  }
+  .modal-img {
+    min-height: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .shelter-content h3 {
+    font-size: 19px;
+  }
+  .modal-meta {
+    gap: 10px;
+  }
+  .modal-book-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* =====================================================================
+   14. MOUNTAIN SAFETY GRID — .safety-grid
+   Adds a 1400px step so 5 columns don't get cramped between 1200-1400.
+   ===================================================================== */
+@media (max-width: 1400px) and (min-width: 1201px) {
+  .safety-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .safety-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =====================================================================
+   15. SHELTER MAP SECTION
+   ===================================================================== */
+@media (max-width: 1200px) and (min-width: 992px) {
+  .real-map-wrapper {
+    height: 400px;
+  }
+}
+
+@media (max-width: 360px) {
+  .map-glass-title strong {
+    font-size: 9px;
+  }
+  .map-legend-box {
+    gap: 7px;
+    padding: 7px;
+  }
+  .legend-item {
+    font-size: 8px;
+  }
+}
+
+/* =====================================================================
+   16. FINAL SAFETY CTA
+   ===================================================================== */
+@media (max-width: 1200px) and (min-width: 992px) {
+  .final-safety-content {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .final-safety-content h2 {
+    font-size: 30px !important;
+  }
+  .final-safety-stats {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+}
+
+/* =====================================================================
+   17. GALLERY — header, filters, media grid, fullscreen modal
+   ===================================================================== */
+.gal-main-heading {
+  font-size: clamp(1.6rem, 4.5vw, 2.6rem);
+}
+
+.gal-sub-heading {
+  font-size: clamp(0.8rem, 1.8vw, 0.9rem);
+}
+
+@media (max-width: 1400px) and (min-width: 1201px) {
+  .gal-media-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .gal-filter-wrapper {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .gal-filter-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .gal-filter-btn {
+    flex-shrink: 0;
+  }
+  .gal-hero-wrap {
+    padding-top: 55px;
+  }
+}
+
+@media (max-width: 400px) {
+  .gal-media-card {
+    height: 230px;
+  }
+}
+
+/* =====================================================================
+   18. SHARED MODAL BEHAVIOR (policy modal already has thorough rules
+      in style.css; this only adds very-small-screen safety and a
+      universal "never exceed viewport" guarantee for every overlay).
+   ===================================================================== */
+.alpine-policy-overlay,
+.alpine-policy-detail-overlay,
+.gal-modal,
+.shelter-modal {
+  padding: 16px;
+}
+
+.alpine-policy-card,
+.alpine-policy-detail-card,
+.gal-modal-card,
+.shelter-modal-box {
+  max-height: 92vh;
+}
+
+@media (max-width: 320px) {
+  .alpine-policy-card {
+    padding: 18px 16px;
+  }
+  .alpine-policy-title {
+    font-size: 19px;
+  }
+}
+
+/* =====================================================================
+   19. VISITOR COUNTER / SMALL UI ELEMENTS — generic scale-down
+   ===================================================================== */
+@media (max-width: 400px) {
+  .stat-heading {
+    font-size: 7px;
+  }
+  .journey-text {
+    font-size: 6.5px;
+  }
+}
+
+/* =====================================================================
+   20. CONTACT / FORM ELEMENTS (Bootstrap-based)
+   Safe, generic rules that only apply if your contact page uses
+   standard Bootstrap form classes — does not touch layout you built
+   with custom classes.
+   ===================================================================== */
+@media (max-width: 576px) {
+  .form-control,
+  .form-select,
+  textarea.form-control {
+    font-size: 0.9rem;
+  }
+}
+
+/* =====================================================================
+   21. EXTRA-LARGE DESKTOP CAP
+   Keeps hero/section content from stretching awkwardly wide on
+   ultra-wide monitors, without changing the design on normal screens.
+   ===================================================================== */
+@media (min-width: 1800px) {
+  .hero-section .container,
+  .about-bento-section .container,
+  .featured-shelters .container {
+    max-width: 1500px;
+  }
+}
+@media (max-width: 991.98px) {
+
+    /* Mobile toggler menu ko side se hatakar
+       navbar ke neeche open karna */
+
+    .master-pill-navbar .navbar-collapse {
+        position: absolute !important;
+
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+
+        width: 100% !important;
+
+        margin-top: 10px !important;
+
+        transform: none !important;
+
+        height: auto !important;
+
+        z-index: 9999 !important;
+    }
+
+    /* Menu open hone par */
+    .master-pill-navbar .navbar-collapse.show {
+        display: block !important;
+
+        left: 0 !important;
+        right: 0 !important;
+
+        width: 100% !important;
+
+        transform: none !important;
+    }
+
+    /* Links ko vertical rakho */
+    .master-pill-navbar .navbar-collapse .inner-links-pill {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .master-pill-navbar .navbar-collapse .nav-item {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .master-pill-navbar .navbar-collapse .nav-link {
+        width: 100% !important;
+        text-align: center !important;
+    }
+}
+/* ============================================================
+ALPINE AURA FOOTER
+RESPONSIVE FIT FIX
+Keeps the original footer layout/design
+============================================================ */
+
+.aura-footer {
+width: 100%;
+max-width: 100%;
+overflow: hidden;
+box-sizing: border-box;
+}
+
+.footer-inner,
+.footer-bottom {
+width: 100%;
+max-width: 1180px;
+margin-left: auto;
+margin-right: auto;
+box-sizing: border-box;
+}
+
+/* ============================================================
+TABLET
+============================================================ */
+
+@media (max-width: 900px) {
+
+
+.footer-inner {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-bottom {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+}
+
+/* ============================================================
+MOBILE
+============================================================ */
+
+@media (max-width: 600px) {
+
+
+.aura-footer {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.footer-inner {
+    width: 100%;
+    max-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
+
+    grid-template-columns: 1fr;
+
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.footer-intro,
+.footer-nav,
+.footer-stats {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-nav {
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-bottom {
+    width: 100%;
+    max-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.footer-copyright {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    text-align: center;
+}
+
+
+}
+
+/* ============================================================
+SMALL MOBILE
+============================================================ */
+
+@media (max-width: 400px) {
+
+
+.footer-inner {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.footer-nav {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.footer-bottom {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.footer-copyright {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+}
+
+/* ============================================================
+EXTRA SMALL SCREENS
+============================================================ */
+
+@media (max-width: 320px) {
+
+
+.footer-inner {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.footer-nav {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.footer-group {
+    align-items: center;
+}
+
+.footer-group a {
+    width: auto;
+}
+
+.footer-bottom {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.socials {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-copyright {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+
+}
+@media (max-width: 600px) {
+
+    .footer-intro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-intro p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .map-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 600px) {
+
+    /* =========================
+       FOOTER INTRO
+       ========================= */
+
+    .footer-intro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-intro p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .map-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* =========================
+       FOOTER LINKS
+       ========================= */
+
+    .footer-nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .footer-group {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-group h4 {
+        text-align: center;
+    }
+
+    .footer-group a {
+        width: auto;
+        text-align: center;
+    }
+
+
+    /* =========================
+       VISITOR COUNT
+       ========================= */
+
+    .footer-stats {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-left: 0 !important;
+
+        border-left: none !important;
+
+        text-align: center;
+    }
+
+    .stat-heading {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .visitor-number {
+        text-align: center;
+    }
+
+    .footer-stats p {
+        text-align: center;
+    }
+
+    .stat-line {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .journey-text {
+        text-align: center;
+    }
+}

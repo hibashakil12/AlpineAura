@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpine Aura | Majestic Mountain Expeditions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="responsive.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body id="home">
+  <!-- 🌟 FLOATING DOUBLE-PILL LUXURY NAVBAR -->
+  <div class="floating-nav-container">
+    <nav class="navbar navbar-expand-lg master-pill-navbar">
+      <div class="container-fluid px-2 px-lg-4">
+        <!-- Left: Local Image Logo + Name (Redirects to index.html) -->
+        <a class="navbar-brand d-flex align-items-center gap-2 m-0 text-decoration-none flex-shrink-0"
+          href="index.html">
+          <img src="./img/Gemini_Generated_Image_rip6w4rip6w4rip6.png" alt="Logo" class="brand-local-img">
+          <span class="text-white fw-bold">Alpine<span class="brand-highlight">Aura</span></span>
+        </a>
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 shadow-none text-white d-lg-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#floatingNavContent" aria-controls="floatingNavContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars-staggered fs-4"></i>
+        </button>
+        <!-- Center: All 9 Multi-Page Navigation Links -->
+        <div class="collapse navbar-collapse justify-content-center flex-grow-1 mx-lg-4" id="floatingNavContent">
+          <ul class="navbar-nav inner-links-pill align-items-lg-center my-2 my-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="techniques.html">Techniques</a></li>
+            <li class="nav-item"><a class="nav-link" href="shelters.html">Shelters</a></li>
+            <li class="nav-item"><a class="nav-link" href="hazards.html">Hazards</a></li>
+            <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Right: Gradient Stylish Action Button -->
+        <div class="d-none d-lg-flex flex-shrink-0">
+          <a href="contact.html" class="btn btn-gradient-action">
+            <span>Book Journey</span>
+            <i class="fa-solid fa-arrow-right-long ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <section class="gal-header-section" id="gallery">
+    <!-- HERO -->
+    <div class="gal-hero-wrap">
+      <span class="gal-badge">ALPINE AURA SHOWCASE</span>
+      <h1 class="gal-main-heading">
+        Moments <span class="gal-gradient-text">Beyond the Mountains</span>
+      </h1>
+      <p class="gal-sub-heading">
+        A curated collection of alpine trails, sunrise summits and quiet valley
+        moments — captured on every Alpine Aura expedition.
+      </p>
+    </div>
+    <!-- FILTERS -->
+    <div class="gal-filter-wrapper" role="tablist" aria-label="Gallery filters">
+      <button class="gal-filter-btn gal-active" type="button" data-filter="all" role="tab" aria-selected="true">
+        <i class="fa-solid fa-layer-group"></i><span>All Media</span>
+      </button>
+      <button class="gal-filter-btn" type="button" data-filter="photo" role="tab" aria-selected="false">
+        <i class="fa-solid fa-image"></i><span>Photos</span>
+      </button>
+      <button class="gal-filter-btn" type="button" data-filter="video" role="tab" aria-selected="false">
+        <i class="fa-solid fa-film"></i><span>Videos</span>
+      </button>
+    </div>
+    <!-- MEDIA GRID -->
+    <div class="gal-media-grid" id="galMediaGrid">
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="1">
+        <img class="gal-card-media" src="./img gal/1.jpg" alt="Two hikers walking toward a snow-covered mountain peak"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&h=900&q=80"
+          data-alt="Two hikers walking toward a snow-covered mountain peak">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="6">
+        <video class="gal-card-media" src="./img gal/v1.mp4" poster="./img gal/v1-poster.jpg" muted autoplay loop
+          playsinline aria-label="Hiker enjoying the wind on a mountain summit"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v1.mp4" data-alt="Hiker enjoying the wind on a mountain summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="2">
+        <img class="gal-card-media" src="./img gal/2.jpg" alt="Hiker walking down a sunlit alpine hillside"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="https://images.unsplash.com/photo-1501554728187-ce583db33af7?auto=format&fit=crop&w=800&h=900&q=80"
+          data-alt="Hiker walking down a sunlit alpine hillside">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="3">
+        <img class="gal-card-media" src="./img gal/3.jpg" alt="Trekker with backpack walking through mountain greenery"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=800&h=900&q=80"
+          data-alt="Trekker with backpack walking through mountain greenery">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="6">
+        <video class="gal-card-media" src="./img gal/v2.mp4" poster="./img gal/v2-poster.jpg" muted autoplay loop
+          playsinline aria-label="Hiker enjoying the wind on a mountain summit"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v2.mp4" data-alt="Hiker enjoying the wind on a mountain summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="4">
+        <img class="gal-card-media" src="./img gal/4.jfif" alt="Climber ascending a steep rocky mountain face"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="https://images.unsplash.com/photo-1502126324834-38f8e02d7160?auto=format&fit=crop&w=800&h=900&q=80"
+          data-alt="Climber ascending a steep rocky mountain face">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="6">
+        <video class="gal-card-media" src="./img gal/v3.mp4" poster="./img gal/v3-poster.jpg" muted autoplay loop
+          playsinline aria-label="Hiker enjoying the wind on a mountain summit"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v3.mp4" data-alt="Hiker enjoying the wind on a mountain summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="5">
+        <img class="gal-card-media" src="./img gal/5.jfif"
+          alt="Hiker with backpack standing on a mountain ridge at dusk" loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="https://images.unsplash.com/photo-1586022045497-31fcf76fa6cc?auto=format&fit=crop&w=800&h=900&q=80"
+          data-alt="Hiker with backpack standing on a mountain ridge at dusk">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="6">
+        <img class="gal-card-media" src="./img gal/6.jfif" alt="Group of hikers crossing a mountain plateau"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="https://images.unsplash.com/photo-1578592391689-0e3d1a1b52b9?auto=format&fit=crop&w=800&h=900&q=80"
+          data-alt="Group of hikers crossing a mountain plateau">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="7">
+        <img class="gal-card-media" src="./img gal/7.jfif" alt="Hiker resting on rocks beside an alpine lake"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="https://images.unsplash.com/photo-1600807497639-3b5d8e74a232?auto=format&fit=crop&w=800&h=900&q=80"
+          data-alt="Hiker resting on rocks beside an alpine lake">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="6">
+        <video class="gal-card-media" src="./img gal/V16.mp4" poster="./img gal/v16-poster.jpg" muted autoplay loop
+          playsinline aria-label="Hiker enjoying the wind on a mountain summit"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v16.mp4" data-alt="Hiker enjoying the wind on a mountain summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="8">
+        <img class="gal-card-media" src="./img gal/8.jfif" alt="Solo hiker standing on a dramatic cliff edge"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="https://images.unsplash.com/photo-1511225070737-5af5ac9a690d?auto=format&fit=crop&w=800&h=900&q=80"
+          data-alt="Solo hiker standing on a dramatic cliff edge">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="9">
+        <img class="gal-card-media" src="./img gal/9.jfif" alt="Hiker with red backpack overlooking misty peaks"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?auto=format&fit=crop&w=800&h=900&q=80"
+          data-alt="Hiker with red backpack overlooking misty peaks">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="10">
+        <img class="gal-card-media" src="./img gal/10.jfif" alt="Climber standing on a summit under a clear sky"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="https://images.unsplash.com/photo-1542359649-31e03cd4d909?auto=format&fit=crop&w=800&h=900&q=80"
+          data-alt="Climber standing on a summit under a clear sky">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="6">
+        <video class="gal-card-media" src="./img gal/v18.mp4" poster="./img gal/v18-poster.jpg" muted autoplay loop
+          playsinline aria-label="Hiker enjoying the wind on a mountain summit"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v18.mp4" data-alt="Hiker enjoying the wind on a mountain summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="6">
+        <video class="gal-card-media" src="./img gal/v22.mp4" poster="./img gal/v22-poster.jpg" muted autoplay loop
+          playsinline aria-label="Hiker enjoying the wind on a mountain summit"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v22.mp4" data-alt="Hiker enjoying the wind on a mountain summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="11">
+        <img class="gal-card-media" src="./img gal/11.jfif" alt="Hikers crossing a lush green alpine hillside"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/11.jfif" data-alt="Hikers crossing a lush green alpine hillside">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="12">
+        <img class="gal-card-media" src="./img gal/12.jfif" alt="Two trekkers walking along a mountain ridge trail"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/12.jfif" data-alt="Two trekkers walking along a mountain ridge trail">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="13">
+        <img class="gal-card-media" src="./img gal/13.jfif" alt="Hiker standing beside a stone cairn on a summit"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/13.jfif" data-alt="Hiker standing beside a stone cairn on a summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="6">
+        <video class="gal-card-media" src="./img gal/V23.mp4" poster="./img gal/V23-poster.jpg" muted autoplay loop
+          playsinline aria-label="Hiker enjoying the wind on a mountain summit"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/V23.mp4" data-alt="Hiker enjoying the wind on a mountain summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="14">
+        <img class="gal-card-media"
+          src="https://images.unsplash.com/photo-1562593028-1fe2d15bde36?auto=format&fit=crop&w=800&h=900&q=80"
+          alt="Hiker walking a forest path toward the mountains" loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="https://images.unsplash.com/photo-1562593028-1fe2d15bde36?auto=format&fit=crop&w=800&h=900&q=80"
+          data-alt="Hiker walking a forest path toward the mountains">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="15">
+        <img class="gal-card-media" src="./img gal/15.jfif" alt="Climber standing on rugged alpine rock terrain"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/15.jfif" data-alt="Climber standing on rugged alpine rock terrain">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="16">
+        <img class="gal-card-media" src="./img gal/16.jfif" alt="Two hikers walking toward a snow-covered mountain peak"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/16.jfif" data-alt="Two hikers walking toward a snow-covered mountain peak">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="6">
+        <video class="gal-card-media" src="./img gal/v5.mp4" poster="./img gal/v5-poster.jpg" muted autoplay loop
+          playsinline aria-label="Hiker enjoying the wind on a mountain summit"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v5.mp4" data-alt="Hiker enjoying the wind on a mountain summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="17">
+        <img class="gal-card-media" src="./img gal/17.jfif" alt="Hiker walking down a sunlit alpine hillside"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/17.jfif" data-alt="Hiker walking down a sunlit alpine hillside">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="18">
+        <img class="gal-card-media" src="./img gal/18.jfif"
+          alt="Trekker with backpack walking through mountain greenery" loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/18.jfif" data-alt="Trekker with backpack walking through mountain greenery">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="19">
+        <img class="gal-card-media" src="./img gal/19.jfif" alt="Climber ascending a steep rocky mountain face"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/19.jfif" data-alt="Climber ascending a steep rocky mountain face">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="20">
+        <img class="gal-card-media" src="./img gal/20.jfif"
+          alt="Hiker with backpack standing on a mountain ridge at dusk" loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/20.jfif" data-alt="Hiker with backpack standing on a mountain ridge at dusk">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="21">
+        <img class="gal-card-media" src="./img gal/21.jfif" alt="Group of hikers crossing a mountain plateau"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/21.jfif" data-alt="Group of hikers crossing a mountain plateau">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="6">
+        <video class="gal-card-media" src="./img gal/v30.mp4" poster="./img gal/v30-poster.jpg" muted autoplay loop
+          playsinline aria-label="Hiker enjoying the wind on a mountain summit"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v30.mp4" data-alt="Hiker enjoying the wind on a mountain summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="22">
+        <img class="gal-card-media" src="./img gal/22.jfif" alt="Hiker resting on rocks beside an alpine lake"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/22.jfif" data-alt="Hiker resting on rocks beside an alpine lake">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="23">
+        <img class="gal-card-media" src="./img gal/23.jfif" alt="Solo hiker standing on a dramatic cliff edge"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/23.jfif" data-alt="Solo hiker standing on a dramatic cliff edge">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="24">
+        <img class="gal-card-media" src="./img gal/24.jfif" alt="Hiker with red backpack overlooking misty peaks"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/24.jfif" data-alt="Hiker with red backpack overlooking misty peaks">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="6">
+        <video class="gal-card-media" src="./img gal/v31.mp4" poster="./img gal/v31-poster.jpg" muted autoplay loop
+          playsinline aria-label="Hiker enjoying the wind on a mountain summit"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v31.mp4" data-alt="Hiker enjoying the wind on a mountain summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="25">
+        <img class="gal-card-media" src="./img gal/25.jfif" alt="Climber standing on a summit under a clear sky"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/25.jfif" data-alt="Climber standing on a summit under a clear sky">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="26">
+        <img class="gal-card-media" src="./img gal/26.jfif" alt="Hikers crossing a lush green alpine hillside"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/26.jfif" data-alt="Hikers crossing a lush green alpine hillside">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="27">
+        <img class="gal-card-media" src="./img gal/27.jfif" alt="Two trekkers walking along a mountain ridge trail"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/27.jfif" data-alt="Two trekkers walking along a mountain ridge trail">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="6">
+        <video class="gal-card-media" src="./img gal/v33.mp4"
+          poster="https://assets.mixkit.co/videos/2385/2385-thumb-360-0.jpg" muted autoplay loop playsinline
+          aria-label="Hiker enjoying the wind on a mountain summit"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v33.mp4" data-alt="Hiker enjoying the wind on a mountain summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="28">
+        <img class="gal-card-media" src="./img gal/28.jfif" alt="Hiker standing beside a stone cairn on a summit"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/28.jfif" data-alt="Hiker standing beside a stone cairn on a summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="29">
+        <img class="gal-card-media" src="./img gal/29.jfif" alt="Hiker walking a forest path toward the mountains"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/29.jfif" data-alt="Hiker walking a forest path toward the mountains">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="28">
+        <img class="gal-card-media" src="./img gal/28.jfif" alt="Hiker standing beside a stone cairn on a summit"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/28.jfif" data-alt="Hiker standing beside a stone cairn on a summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="30">
+        <img class="gal-card-media" src="./img gal/30.jfif" alt="Climber standing on rugged alpine rock terrain"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/30.jfif" data-alt="Climber standing on rugged alpine rock terrain">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="1">
+        <video class="gal-card-media" src="./img gal/v34.mp4" poster="./img gal/v34-poster.jpg" muted autoplay loop
+          playsinline aria-label="Mountainous area in the Alps"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v34.mp4" data-alt="Mountainous area in the Alps">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="2">
+        <video class="gal-card-media" src="./img gal/v35.mp4" poster="./img gal/v35-poster.jpg" muted autoplay loop
+          playsinline aria-label="Fog on the heights of snowy mountains"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v35.mp4" data-alt="Fog on the heights of snowy mountains">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="3">
+        <video class="gal-card-media" src="./img gal/v36.mp4" poster="./img gal/v36-poster.jpg" muted autoplay loop
+          playsinline aria-label="Lush green mountains under cloudy skies"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v36.mp4" data-alt="Lush green mountains under cloudy skies">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="4">
+        <video class="gal-card-media" src="./img gal/v3.mp4" poster="./img gal/v3-poster.jpg" muted autoplay loop
+          playsinline aria-label="Lush green valley with mountains"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v3.mp4" data-alt="Lush green valley with mountains">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="5">
+        <video class="gal-card-media" src="./img gal/v38.mp4" poster="./img gal/v38-poster.jpg" muted autoplay loop
+          playsinline aria-label="Flying over a snow-dusted rocky mountain"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v38.mp4" data-alt="Flying over a snow-dusted rocky mountain">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="6">
+        <video class="gal-card-media" src="./img gal/v39.mp4" poster="./img gal/v39-poster.jpg" muted autoplay loop
+          playsinline aria-label="Hiker enjoying the wind on a mountain summit"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v39.mp4" data-alt="Hiker enjoying the wind on a mountain summit">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="7">
+        <video class="gal-card-media" src="./img gal/v40.mp4" poster="./img gal/v40-poster.jpg" muted autoplay loop
+          playsinline aria-label="Swiss Alps snow timelapse"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v40.mp4" data-alt="Swiss Alps snow timelapse">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="8">
+        <video class="gal-card-media" src="./img gal/v41.mp4" poster="./img gal/v41-poster.jpg" muted autoplay loop
+          playsinline aria-label="Clouds drifting over the mountains"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v41.mp4" data-alt="Clouds drifting over the mountains">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-video-card" data-type="video" data-index="9">
+        <video class="gal-card-media" src="./img gal/v5.mp4" poster="./img gal/v5-poster.jpg" muted autoplay loop
+          playsinline aria-label="Trail through a mountain range"></video>
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="video"
+          data-src="./img gal/v5.mp4" data-alt="Trail through a mountain range">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="gal-media-card gal-photo-card" data-type="photo" data-index="30">
+        <img class="gal-card-media" src="./img gal/30.jfif" alt="Climber standing on rugged alpine rock terrain"
+          loading="lazy">
+        <button class="gal-fs-btn" type="button" aria-label="View full screen" data-media-type="photo"
+          data-src="./img gal/30.jfif" data-alt="Climber standing on rugged alpine rock terrain">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY MODAL (single shared modal for photos + videos) -->
+  <div class="gal-modal" id="galModal" aria-hidden="true">
+    <div class="gal-modal-card" id="galModalCard" role="dialog" aria-modal="true" aria-label="Gallery preview">
+      <button class="gal-close-modal" id="galCloseModal" type="button" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="gal-modal-content" id="galModalContent">
+        <!-- Photo <img> or <video> is injected here by gallery.js -->
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="aura-footer">
+    <div class="footer-aura"></div>
+    <div class="mountain-line">
+      <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+        <path d="
+                M0 150
+                L120 95
+                L190 125
+                L290 45
+                L370 110
+                L470 65
+                L550 125
+                L660 35
+                L760 115
+                L850 70
+                L940 125
+                L1050 50
+                L1140 105
+                L1240 35
+                L1320 100
+                L1440 55
+                L1440 180
+                L0 180
+                Z
+            " />
+      </svg>
+    </div>
+    <div class="footer-inner">
+      <div class="footer-intro">
+        <div class="footer-logo">
+          <img src="./img/Gemini_Generated_Image_rip6w4rip6w4rip6.png" alt="Alpine Aura">
+          <span>ALPINE AURA</span>
+        </div>
+        <p>
+          Explore beyond the ordinary.
+          Discover mountains, stories and
+          unforgettable adventures.
+        </p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Ladakh%2C%20India" target="_blank"
+          rel="noopener noreferrer" class="map-btn">
+          <span>⌖</span>
+          Explore on Map
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-group">
+          <h4>EXPLORE</h4>
+          <a href="history.html">
+            Mountains
+          </a>
+          <a href="history.html">
+            History
+          </a>
+          <a href="activities.html">
+            Activities
+          </a>
+          <a href="gallery.html">
+            Gallery
+          </a>
+        </div>
+        <div class="footer-group">
+          <h4>ALPINE AURA</h4>
+          <a href="about.html">
+            About Us
+          </a>
+          <a href="index.html#reviews">
+            Reviews
+          </a>
+          <a href="contact.html">
+            Contact
+          </a>
+          <a href="travel-guide.html">
+            Travel Guide
+          </a>
+        </div>
+      </div>
+      <div class="footer-stats">
+        <div class="stat-heading">
+          <span class="pulse"></span>
+          PEOPLE WHO EXPLORED
+        </div>
+        <div class="visitor-number" id="visitorCount">
+          12,847
+        </div>
+        <p>
+          explorers have visited
+          Alpine Aura
+        </p>
+        <div class="stat-line"></div>
+        <span class="journey-text">
+          YOUR JOURNEY STARTS HERE
+        </span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>
+        © 2026 Alpine Aura. All Rights Reserved.
+      </span>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">
+          ig
+        </a>
+        <a href="#" aria-label="Facebook">
+          f
+        </a>
+        <a href="#" aria-label="YouTube">
+          yt
+        </a>
+      </div>
+      <span class="footer-slogan">
+        BORN TO EXPLORE
+      </span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>
